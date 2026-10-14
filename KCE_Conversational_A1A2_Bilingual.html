@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KCE Conversational English · Level A1–A2 · Complete 12-Session Program</title>
+<title>KCE Conversational English · Level A1–A2 · Complete 12-Lesson Program</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -187,7 +187,7 @@ body.show-fr .fr-gloss{display:block}
   <div class="hud-sess"><small>Conversational English · A1–A2</small><span id="hud-title"></span></div>
   <div class="hud-spacer"></div>
   <button class="hud-lang" id="langbtn" aria-pressed="false" title="Afficher le francais / Show French">🇫🇷 Francais</button>
-  <button class="hud-menu" data-menu="1">☰ Sessions</button>
+  <button class="hud-menu" data-menu="1">☰ Lessons</button>
   <div class="hud-prog" aria-label="Lesson progress"><i id="prog"></i></div>
   <div class="hud-pts">★ <span id="pts">0</span>/<span id="ptsmax">100</span></div>
 </header>
@@ -200,8 +200,8 @@ body.show-fr .fr-gloss{display:block}
     <h1>Speak With Confidence</h1>
     <p class="center" style="margin:14px 0 6px"><span class="levelpill">Level A1–A2 · Beginner</span></p>
     <p class="center" style="color:#C9D2E8;font-size:20px;max-width:640px;margin:0 auto">
-      A complete 12-session program for adult learners of English. Meet twice a week for 6 weeks,
-      or once a week for 12 — every session works either way.
+      A complete 12-lesson program for adult learners of English. Meet twice a week for 6 weeks,
+      or once a week for 12 — every lesson works either way.
     </p>
   </div>
   <div id="menu"></div>
@@ -211,14 +211,14 @@ body.show-fr .fr-gloss{display:block}
   </div>
 </main>
 
-<!-- LESSON STAGE (built per session) -->
+<!-- LESSON STAGE (built per lesson) -->
 <main class="stage" id="stage" style="display:none"></main>
 
 <script>
 var SESSIONS=[
 /* ============ S1 · GREETINGS & INTRODUCTIONS ============ */
 {max:100,mult:1,letters:[1,0,3,2,2,0,3,1,0,3,1,2],
-/* --- FR support layer (S1) --- */
+/* --- FR support layer (L1) --- */
 obj_fr:['Saluer les gens dans les situations formelles et informelles','Te pr\u00e9senter et demander le nom de quelqu\u2019un','Faire durer une premi\u00e8re conversation avec une question de suivi'],
 wuTitle_fr:'Qu\u2019est-ce que tu sais d\u00e9j\u00e0\u202f?',
 wu_fr:['Quelqu\u2019un dit \u00ab\u202fHello!\u202f\u00bb. La r\u00e9ponse la plus naturelle, c\u2019est\u2026','Il est 9\u202fh du matin. Tu dis\u2026','\u00ab\u202fWhat\u2019s your name?\u202f\u00bb \u2014 la meilleure r\u00e9ponse, c\u2019est\u2026','Quand tu pars, tu dis\u2026'],
@@ -270,7 +270,7 @@ culture_fr:[
  'Aux \u00c9tats-Unis et au Canada, une premi\u00e8re rencontre comprend souvent une <b>poign\u00e9e de main br\u00e8ve et ferme</b>, un contact visuel et un sourire.',
  '\u00ab\u202fHow are you?\u202f\u00bb est g\u00e9n\u00e9ralement une <b>salutation</b>, pas une vraie question. On attend une r\u00e9ponse courte et positive\u202f: <i>\u00ab\u202fGreat, thanks! And you?\u202f\u00bb</i> \u2014 m\u00eame lors d\u2019une mauvaise journ\u00e9e\u202f!'],
 boss_fr:['Lors d\u2019une entrevue d\u2019embauche, l\u2019intervieweur dit \u00ab\u202fIt\u2019s a pleasure to meet you.\u202f\u00bb. Ta MEILLEURE r\u00e9ponse\u202f:','Un nouveau voisin dit\u202f: \u00ab\u202fHi, I\u2019m Sam. How are you?\u202f\u00bb. Choisis la r\u00e9ponse qui r\u00e9pond ET continue la conversation\u202f:'],
-challenge_fr:'Salue trois personnes en anglais cette semaine. Utilise une question de suivi chaque fois. Tu nous en reparleras \u00e0 la s\u00e9ance 2\u202f!',
+challenge_fr:'Salue trois personnes en anglais cette semaine. Utilise une question de suivi chaque fois. Tu nous en reparleras \u00e0 la le\u00e7on 2\u202f!',
 next_fr:'Tout sur moi \u2014 parler de ta famille, de ton travail et de ce que tu aimes.',
 t:'Hello! Nice to Meet You',sub:'Greetings & Introductions',
 obj:['Greet people in formal and informal situations','Introduce yourself and ask someone\'s name','Keep a first conversation going with one follow-up question'],
@@ -337,14 +337,14 @@ boss:[
  {q:'A new neighbor says: "Hi, I\'m Sam. How are you?" Choose the reply that answers AND continues the conversation:',p:10,a:'Great, thanks! I\'m Lina — are you new to the building?',d:['Fine.','Yes.','Goodbye, Sam.']}],
 quote:'"If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart."',by:'Nelson Mandela',
 bravo:'Wonderful work!',
-challenge:'Greet three people in English this week. Use one follow-up question each time. Report back in Session 2!',
+challenge:'Greet three people in English this week. Use one follow-up question each time. Report back in Lesson 2!',
 next:'All About Me — talking about your family, your work, and what you love.'},
 
 /* ============ S2 · ALL ABOUT ME ============ */
 {max:100,mult:1,letters:[0,2,1,3,3,1,0,2,1,0,2,3],
-/* FR (S2) */
+/* FR (L2) */
 obj_fr:['Parler de ta famille, de ton travail et de tes \u00e9tudes','Dire ce que tu aimes et ce que tu n\u2019aimes pas \u2014 naturellement','Construire une pr\u00e9sentation de toi en 5\u202fphrases, utile partout'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f1\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f1\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['Tu rencontres quelqu\u2019un pour la PREMI\u00c8RE fois. Tu dis\u2026','Quelle salutation est FORMELLE\u202f?','\u00ab\u202fWhere are you from?\u202f\u00bb \u2014 la meilleure r\u00e9ponse\u202f:','La r\u00e8gle d\u2019or pour garder la conversation vivante\u202f:'],
 vfr:[
  ['La famille','Parents, fr\u00e8res, s\u0153urs\u2026'],
@@ -394,11 +394,11 @@ culture_fr:[
  'En Am\u00e9rique du Nord, \u00ab\u202fWhat do you do?\u202f\u00bb est l\u2019une des PREMI\u00c8RES questions qu\u2019on pose \u2014 parler de son travail est une conversation normale, pas impolie.',
  'Mais demander le salaire, l\u2019\u00e2ge ou le poids EST consid\u00e9r\u00e9 comme priv\u00e9. Reste sur le m\u00e9tier, les passe-temps, la ville d\u2019origine et les bases de la famille.'],
 boss_fr:['\u00c0 un party de bureau, quelqu\u2019un demande \u00ab\u202fSo, what do you do?\u202f\u00bb. La MEILLEURE r\u00e9ponse\u202f:','Choisis la phrase SANS aucune faute\u202f:'],
-challenge_fr:'\u00c9cris ta pr\u00e9sentation en 5\u202fphrases et pratique-la devant le miroir, deux fois par jour. \u00c0 la prochaine s\u00e9ance, tu la diras par c\u0153ur\u202f!',
+challenge_fr:'\u00c9cris ta pr\u00e9sentation en 5\u202fphrases et pratique-la devant le miroir, deux fois par jour. \u00c0 la prochaine le\u00e7on, tu la diras par c\u0153ur\u202f!',
 next_fr:'Ma journ\u00e9e \u2014 les routines, l\u2019heure et le rythme de ta semaine.',
 t:'All About Me',sub:'Family, Work & What You Love',
 obj:['Talk about your family, your job, and your studies','Say what you like and don\'t like — naturally','Build a 5-sentence self-introduction you can use anywhere'],
-wuTitle:'Remember Session 1? Let\'s check!',
+wuTitle:'Remember Lesson 1? Let\'s check!',
 wu:[
  {q:'You meet someone for the FIRST time. You say…',p:5,a:'Nice to meet you!',d:['See you later!','Good night!','I\'m fine, thanks.']},
  {q:'Which greeting is FORMAL?',p:5,a:'Good afternoon, ma\'am.',d:['Hey!','What\'s up?','Yo, friend!']},
@@ -461,14 +461,14 @@ boss:[
  {q:'Choose the sentence with NO mistakes:',p:10,a:'I have two kids, and I love spending time with them.',d:['I have two childs and love spend time.','I has two kids and love them spend time.','I am two kids and spending love time.']}],
 quote:'"To have another language is to possess a second soul."',by:'Charlemagne',
 bravo:'You\'re telling your story!',
-challenge:'Write your 5-sentence self-introduction and practice it in the mirror twice a day. Next session, you\'ll say it from memory!',
+challenge:'Write your 5-sentence self-introduction and practice it in the mirror twice a day. Next lesson, you\'ll say it from memory!',
 next:'My Day — routines, time, and the rhythm of your week.'},
 
 /* ============ S3 · ROUTINES, TIME & SCHEDULES ============ */
 {max:100,mult:1,letters:[2,3,0,1,0,2,3,1,3,2,1,0],
-/* FR (S3) */
+/* FR (L3) */
 obj_fr:['Dire l\u2019heure et parler de ton horaire quotidien','Utiliser les mots de fr\u00e9quence\u202f: always, usually, sometimes, never','Poser et r\u00e9pondre \u00e0 des questions \u00ab\u202fWhat time do you\u2026?\u202f\u00bb'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f2\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f2\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['\u00ab\u202fWhat do you do?\u202f\u00bb \u2014 la meilleure r\u00e9ponse parle de ton\u2026','Choisis la phrase correcte\u202f:','\u00ab\u202fAre you married?\u202f\u00bb \u2014 une r\u00e9ponse naturelle\u202f:','Pour renvoyer une question, tu dis\u2026'],
 vfr:[
  ['Se r\u00e9veiller / Se lever','Le d\u00e9but de la journ\u00e9e.'],
@@ -522,7 +522,7 @@ challenge_fr:'Demain, raconte ta matin\u00e9e \u00c0 VOIX HAUTE en anglais penda
 next_fr:'Une table pour deux \u2014 commander \u00e0 manger et sortir au restaurant avec confiance.',
 t:'My Day, My Week',sub:'Routines, Time & Schedules',
 obj:['Tell the time and talk about your daily schedule','Use frequency words: always, usually, sometimes, never','Ask and answer "What time do you…?" questions'],
-wuTitle:'Remember Session 2? Let\'s check!',
+wuTitle:'Remember Lesson 2? Let\'s check!',
 wu:[
  {q:'"What do you do?" — the best answer is about your…',p:5,a:'job or studies',d:['favorite food','weekend','house']},
  {q:'Choose the correct sentence:',p:5,a:'I love playing soccer.',d:['I love play soccer.','I loving soccer play.','I love to playing soccer.']},
@@ -590,9 +590,9 @@ next:'Table for Two — ordering food and dining out with confidence.'},
 
 /* ============ S4 · FOOD & DINING OUT ============ */
 {max:100,mult:1,letters:[3,1,2,0,1,3,0,2,0,1,3,2],
-/* FR (S4) */
+/* FR (L4) */
 obj_fr:['Commander \u00e0 manger et \u00e0 boire poliment avec \u00ab\u202fI\u2019d like\u2026\u202f\u00bb','Comprendre les questions courantes du menu et du restaurant','Demander l\u2019addition et g\u00e9rer les petits probl\u00e8mes'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f3\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f3\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['\u00ab\u202fI eat breakfast ______ 7:00.\u202f\u00bb (la pr\u00e9position)','Place le mot de fr\u00e9quence au bon endroit\u202f:','\u00ab\u202fA quarter to six\u202f\u00bb, c\u2019est\u2026','\u00ab\u202f______ weekdays, I take the train.\u202f\u00bb'],
 vfr:[
  ['J\u2019aimerais\u2026','Fa\u00e7on polie de commander.'],
@@ -647,7 +647,7 @@ challenge_fr:'La prochaine fois que tu commandes \u2014 resto, caf\u00e9 ou serv
 next_fr:'Le magasinage fut\u00e9 \u2014 les prix, les tailles et les conversations en magasin.',
 t:'Table for Two, Please',sub:'Food & Dining Out',
 obj:['Order food and drinks politely with "I\'d like…"','Understand common menu and restaurant questions','Ask for the check and handle small problems'],
-wuTitle:'Remember Session 3? Let\'s check!',
+wuTitle:'Remember Lesson 3? Let\'s check!',
 wu:[
  {q:'"I eat breakfast ________ 7:00." (preposition)',p:5,a:'at',d:['on','in','to']},
  {q:'Put the frequency word in the right place:',p:5,a:'I usually cook dinner at home.',d:['I cook usually dinner at home.','Usually I cook at dinner home.','I cook dinner at usually home.']},
@@ -715,9 +715,9 @@ challenge:'Next time you order food — restaurant, café, or drive-through — 
 next:'Smart Shopper — prices, sizes, and shopping conversations.'},
 /* ============ S5 · SHOPPING & MONEY ============ */
 {max:100,mult:1,letters:[1,3,0,2,2,0,1,3,3,0,2,1],
-/* FR (S5) */
+/* FR (L5) */
 obj_fr:['Demander les prix, les tailles et les couleurs','Utiliser les phrases du magasinage\u202f: \u00ab\u202fJust looking\u202f\u00bb, \u00ab\u202fDo you have this in\u2026?\u202f\u00bb','Payer, obtenir un re\u00e7u et g\u00e9rer un retour simple'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f4\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f4\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['La fa\u00e7on polie de commander \u00e0 manger\u202f:','Tu veux payer au restaurant. Tu demandes\u2026','\u00ab\u202fAnything else?\u202f\u00bb \u2014 tu as fini de commander\u202f:','Le caf\u00e9 que tu emportes, c\u2019est un caf\u00e9\u2026'],
 vfr:[
  ['Combien \u00e7a co\u00fbte\u202f?','Pour demander le prix.'],
@@ -772,7 +772,7 @@ challenge_fr:'Cette semaine, pose une vraie question en anglais dans un magasin\
 next_fr:'Trouver son chemin \u2014 les directions, le transport, et ne plus jamais se sentir perdu.',
 t:'The Smart Shopper',sub:'Shopping, Prices & Money',
 obj:['Ask about prices, sizes, and colors','Use shopper phrases: "Just looking," "Do you have this in…?"','Pay, get a receipt, and handle a simple return'],
-wuTitle:'Remember Session 4? Let\'s check!',
+wuTitle:'Remember Lesson 4? Let\'s check!',
 wu:[
  {q:'The polite way to order food:',p:5,a:'I\'d like the salad, please.',d:['Give me salad.','Salad for my mouth.','I demand salad.']},
  {q:'You want to pay at a restaurant. You ask for…',p:5,a:'the check',d:['the menu','the kitchen','the table']},
@@ -841,9 +841,9 @@ next:'Finding Your Way — directions, transportation, and never feeling lost.'}
 
 /* ============ S6 · GETTING AROUND ============ */
 {max:100,mult:1,letters:[0,1,2,3,1,2,3,0,2,3,0,1],
-/* FR (S6) */
+/* FR (L6) */
 obj_fr:['Demander et comprendre des directions','Utiliser les mots de lieu\u202f: next to, across from, on the corner','G\u00e9rer les autobus, les trains et le covoiturage avec confiance'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f5\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f5\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['Tu veux le prix d\u2019un seul article\u202f:','Un vendeur offre de l\u2019aide, mais tu regardes\u202f:','Pour tester des v\u00eatements avant d\u2019acheter, tu\u2026','Pour un retour, tu as besoin de ton\u2026'],
 vfr:[
  ['Excusez-moi\u2026','Fa\u00e7on polie d\u2019arr\u00eater un inconnu.'],
@@ -898,7 +898,7 @@ challenge_fr:'Cette semaine, donne des directions \u00e0 quelqu\u2019un en angla
 next_fr:'Faisons des plans \u2014 les invitations, accepter, et l\u2019art d\u00e9licat de dire non.',
 t:'Finding Your Way',sub:'Directions & Getting Around',
 obj:['Ask for and understand directions','Use location words: next to, across from, on the corner','Handle buses, trains, and rideshares with confidence'],
-wuTitle:'Remember Session 5? Let\'s check!',
+wuTitle:'Remember Lesson 5? Let\'s check!',
 wu:[
  {q:'You want the price of one item:',p:5,a:'How much is this?',d:['How many is this?','What money this?','How cost?']},
  {q:'A salesperson offers help, but you\'re browsing:',p:5,a:'Just looking, thanks.',d:['Look at me, thanks.','I am a looker.','No help is needed for my body.']},
@@ -967,9 +967,9 @@ next:'Let\'s Make Plans — invitations, accepting, and the gentle art of saying
 
 /* ============ S7 · MAKING PLANS & INVITATIONS ============ */
 {max:100,mult:1,letters:[2,0,3,1,3,0,1,2,1,3,0,2],
-/* FR (S7) */
+/* FR (L7) */
 obj_fr:['Inviter quelqu\u2019un avec \u00ab\u202fWould you like to\u2026?\u202f\u00bb et \u00ab\u202fDo you want to\u2026?\u202f\u00bb','Accepter chaleureusement et refuser poliment avec une raison','S\u2019entendre sur un jour, une heure et un lieu \u2014 et confirmer'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f6\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f6\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['L\u2019ouverture polie pour aborder un inconnu\u202f:','\u00ab\u202fIt\u2019s across from the park\u202f\u00bb veut dire\u2026','Tu sors de l\u2019autobus \u00e0 ton arr\u00eat \u2014 tu\u2026','\u00ab\u202fGo straight\u202f\u00bb veut dire\u2026'],
 vfr:[
  ['Es-tu libre\u2026?','Pour demander la disponibilit\u00e9.'],
@@ -1023,7 +1023,7 @@ challenge_fr:'Fais un vrai plan en anglais cette semaine \u2014 invite un/une ca
 next_fr:'Au bout du fil \u2014 les appels, la bo\u00eete vocale et les textos sans peur.',
 t:'Are You Free on Saturday?',sub:'Making Plans & Invitations',
 obj:['Invite someone with "Would you like to…?" and "Do you want to…?"','Accept warmly and decline politely with a reason','Agree on a day, time, and place — and confirm it'],
-wuTitle:'Remember Session 6? Let\'s check!',
+wuTitle:'Remember Lesson 6? Let\'s check!',
 wu:[
  {q:'The polite opener for asking a stranger:',p:5,a:'Excuse me…',d:['Hey, person…','Listen here…','Attention, human…']},
  {q:'"It\'s across from the park" means…',p:5,a:'on the opposite side of the park',d:['inside the park','behind a tree','far from the park']},
@@ -1091,9 +1091,9 @@ next:'On the Line — phone calls, voicemail, and texting without fear.'},
 
 /* ============ S8 · PHONE, VOICEMAIL & TEXTING ============ */
 {max:100,mult:1,letters:[3,2,1,0,0,3,2,1,2,0,1,3],
-/* FR (S8) */
+/* FR (L8) */
 obj_fr:['R\u00e9pondre et faire des appels simples avec confiance','Demander aux gens de r\u00e9p\u00e9ter, de ralentir ou d\u2019\u00e9peler','Laisser une bo\u00eete vocale claire en 4\u202flignes et texter poliment'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f7\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f7\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['Une invitation chaleureuse commence par\u2026','Le OUI enthousiaste\u202f:','Un refus poli inclut chaleur + \u2026','\u00ab\u202fRain check\u202f\u00bb veut dire\u2026'],
 vfr:[
  ['C\u2019est\u2026 / \u00c0 l\u2019appareil','Pour t\u2019identifier.'],
@@ -1148,7 +1148,7 @@ challenge_fr:'Enregistre une bo\u00eete vocale d\u2019entra\u00eenement sur ton 
 next_fr:'Se sentir bien \u2014 la sant\u00e9, les rendez-vous, et parler pour soi-m\u00eame.',
 t:'On the Line',sub:'Phone Calls, Voicemail & Texting',
 obj:['Answer and make simple phone calls with confidence','Ask people to repeat, slow down, or spell things','Leave a clear 4-line voicemail and text politely'],
-wuTitle:'Remember Session 7? Let\'s check!',
+wuTitle:'Remember Lesson 7? Let\'s check!',
 wu:[
  {q:'A warm invitation starts with…',p:5,a:'Would you like to…?',d:['You must…','It is required to…','Obey and come to…']},
  {q:'The enthusiastic YES:',p:5,a:'I\'d love to!',d:['It is allowed.','I accept the terms.','Fine, whatever.']},
@@ -1216,9 +1216,9 @@ challenge:'Record a practice voicemail on your own phone using the 4-line formul
 next:'Feeling Good — health, appointments, and speaking up for yourself.'},
 /* ============ S9 · HEALTH & APPOINTMENTS ============ */
 {max:100,mult:1,letters:[1,0,2,3,2,1,3,0,3,1,0,2],
-/* FR (S9) */
+/* FR (L9) */
 obj_fr:['D\u00e9crire les sympt\u00f4mes courants\u202f: \u00ab\u202fI have a\u2026\u202f\u00bb, \u00ab\u202fMy \u2026 hurts\u202f\u00bb','Prendre un rendez-vous chez le m\u00e9decin par t\u00e9l\u00e9phone','Comprendre les bases de la pharmacie et les instructions simples'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f8\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f8\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['Tu n\u2019as pas bien entendu la personne\u202f:','Une bo\u00eete vocale claire dit ton num\u00e9ro\u2026','\u00ab\u202fHold on, please\u202f\u00bb veut dire\u2026','Tu ES la personne demand\u00e9e. Tu dis\u2026'],
 vfr:[
  ['Je ne me sens pas bien','\u00ab\u202fJe suis malade\u202f\u00bb en g\u00e9n\u00e9ral.'],
@@ -1273,7 +1273,7 @@ challenge_fr:'\u00c9cris ta \u00ab\u202fcarte sant\u00e9\u202f\u00bb personnelle
 next_fr:'\u00c0 mon avis \u2014 \u00eatre d\u2019accord, ne pas l\u2019\u00eatre, et partager ce que tu penses vraiment.',
 t:'Feeling Good',sub:'Health & Appointments',
 obj:['Describe common symptoms: "I have a…", "My … hurts"','Make a doctor\'s appointment by phone','Understand pharmacy basics and simple instructions'],
-wuTitle:'Remember Session 8? Let\'s check!',
+wuTitle:'Remember Lesson 8? Let\'s check!',
 wu:[
  {q:'You didn\'t hear the caller clearly:',p:5,a:'Sorry, could you repeat that?',d:['Your voice is broken.','Say words better.','My phone refuses you.']},
  {q:'A clear voicemail says your number…',p:5,a:'twice, slowly',d:['never','in a whisper','backwards']},
@@ -1342,9 +1342,9 @@ next:'In My Opinion — agreeing, disagreeing, and sharing what you really think
 
 /* ============ S10 · OPINIONS & PREFERENCES ============ */
 {max:100,mult:1,letters:[0,3,1,2,1,0,2,3,0,2,3,1],
-/* FR (S10) */
+/* FR (L10) */
 obj_fr:['Donner ton avis avec \u00ab\u202fI think\u2026\u202f\u00bb et \u00ab\u202fIn my opinion\u2026\u202f\u00bb','\u00catre d\u2019accord et en d\u00e9saccord poliment \u2014 sans tuer la conversation','Comparer les choses\u202f: better, worse, the best, the worst'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f9\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f9\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['Douleur \u00e0 la t\u00eate =','Pour r\u00e9server une visite chez le m\u00e9decin, tu prends un\u2026','\u00ab\u202fMy knee ______.\u202f\u00bb (le verbe de douleur)','Le papier du m\u00e9decin pour les m\u00e9dicaments\u202f:'],
 vfr:[
  ['Je pense\u2026','L\u2019ouverture d\u2019avis de tous les jours.'],
@@ -1398,7 +1398,7 @@ challenge_fr:'Partage un vrai avis en anglais cette semaine \u2014 recommande un
 next_fr:'Il \u00e9tait une fois une fin de semaine \u2014 raconter des histoires sur ton pass\u00e9.',
 t:'In My Opinion…',sub:'Opinions, Agreeing & Disagreeing',
 obj:['Give opinions with "I think…" and "In my opinion…"','Agree and disagree politely — without killing the conversation','Compare things: better, worse, the best, the worst'],
-wuTitle:'Remember Session 9? Let\'s check!',
+wuTitle:'Remember Lesson 9? Let\'s check!',
 wu:[
  {q:'Pain in your head =',p:5,a:'I have a headache.',d:['I am headache.','Head is anger.','My head is loud.']},
  {q:'To book a doctor visit you make an…',p:5,a:'appointment',d:['application','appearance','agreement']},
@@ -1466,9 +1466,9 @@ next:'Once Upon a Weekend — telling stories about your past.'},
 
 /* ============ S11 · STORYTELLING & PAST EXPERIENCES ============ */
 {max:100,mult:1,letters:[2,1,3,0,0,2,1,3,1,0,3,2],
-/* FR (S11) */
+/* FR (L11) */
 obj_fr:['Utiliser le pass\u00e9 simple pour raconter ce qui s\u2019est pass\u00e9','Relier une histoire avec\u202f: first, then, after that, finally','R\u00e9agir aux histoires comme un anglophone\u202f: \u00ab\u202fNo way!\u202f\u00bb \u00ab\u202fWhat happened next?\u202f\u00bb'],
-wuTitle_fr:'Tu te souviens de la s\u00e9ance\u202f10\u202f? On v\u00e9rifie\u202f!',
+wuTitle_fr:'Tu te souviens de la le\u00e7on\u202f10\u202f? On v\u00e9rifie\u202f!',
 wu_fr:['Le pont du d\u00e9saccord poli\u202f:','\u00ab\u202fgood \u2192 better \u2192 \u2026\u202f\u00bb','\u00ab\u202fI ______ tea to coffee.\u202f\u00bb (choisir une chose)','La r\u00e9ponse flexible \u00e0 \u00ab\u202fBeach or mountains?\u202f\u00bb\u202f:'],
 vfr:[
  ['La fin de semaine derni\u00e8re / Hier','Marqueurs de temps pass\u00e9.'],
@@ -1521,10 +1521,10 @@ culture_fr:[
  'Les auditeurs sont ACTIFS\u202f: hochements de t\u00eate, \u00ab\u202fuh-huh\u202f\u00bb, \u00ab\u202freally?\u202f\u00bb, \u00ab\u202fno way!\u202f\u00bb Le silence pendant qu\u2019on raconte peut sembler de l\u2019ennui \u2014 r\u00e9agis \u00e0 voix haute\u202f!'],
 boss_fr:['Choisis l\u2019histoire avec le pass\u00e9 PARFAIT\u202f:','Ton coll\u00e8gue dit\u202f: \u00ab\u202fYou won\u2019t believe my vacation\u2026\u202f\u00bb La MEILLEURE r\u00e9ponse d\u2019auditeur actif\u202f:'],
 challenge_fr:'Pr\u00e9pare ton \u00ab\u202fhistoire du lundi\u202f\u00bb\u202f: une vraie histoire de 30\u202fsecondes de cette semaine, avec First / Then / Suddenly / Finally. Tu ouvriras le Capstone avec\u202f!',
-next_fr:'LE CAPSTONE \u2014 S\u00e9ance\u202f12, le D\u00e9fi de conversation. Double points. Tout ce que tu as appris. Apporte ton histoire\u202f!',
+next_fr:'LE CAPSTONE \u2014 Le\u00e7on\u202f12, le D\u00e9fi de conversation. Double points. Tout ce que tu as appris. Apporte ton histoire\u202f!',
 t:'Once Upon a Weekend',sub:'Storytelling & Past Experiences',
 obj:['Use the simple past to tell what happened','Connect a story with: first, then, after that, finally','React to stories like a native: "No way!" "What happened next?"'],
-wuTitle:'Remember Session 10? Let\'s check!',
+wuTitle:'Remember Lesson 10? Let\'s check!',
 wu:[
  {q:'The polite disagreement bridge:',p:5,a:'I see your point, but…',d:['Incorrect, human.','Your idea has died.','No no no.']},
  {q:'"good → better → …"',p:5,a:'the best',d:['the goodest','more good','the most well']},
@@ -1590,26 +1590,26 @@ boss:[
 quote:'"There is no greater agony than bearing an untold story inside you."',by:'Maya Angelou',
 bravo:'What a story!',
 challenge:'Prepare your "Monday story": one true 30-second story from this week, with First / Then / Suddenly / Finally. You\'ll open the Capstone with it!',
-next:'THE CAPSTONE — Session 12, the Conversation Challenge. Double points. Everything you\'ve learned. Bring your story!'},
+next:'THE CAPSTONE — Lesson 12, the Conversation Challenge. Double points. Everything you\'ve learned. Bring your story!'},
 
 /* ============ S12 · CAPSTONE CONVERSATION CHALLENGE ============ */
 {max:200,mult:2,letters:[3,0,1,2,2,3,0,1,0,1,2,3],
-/* FR (S12) */
-obj_fr:['Prouve tes comp\u00e9tences \u00e0 travers les 11\u202fs\u00e9ances \u2014 double points\u202f!','Survis au parcours de sc\u00e9narios de la vraie vie','C\u00e9l\u00e8bre\u202f: tu peux maintenant tenir une conversation en anglais'],
-wuTitle_fr:'Le grand \u00e9chauffement\u202f: s\u00e9ances\u202f1 \u00e0 3',
-wu_fr:['(S1) Tu rencontres la m\u00e8re de ton ami pour la premi\u00e8re fois\u202f:','(S2) \u00ab\u202fWhat do you do?\u202f\u00bb \u2014 la r\u00e9ponse naturelle\u202f:','(S3) \u00ab\u202fI ______ check my phone before bed\u2026\u202f\u00bb (100\u202f%)','(S3) \u00ab\u202fA quarter past eight\u202f\u00bb, c\u2019est\u2026'],
+/* FR (L12) */
+obj_fr:['Prouve tes comp\u00e9tences \u00e0 travers les 11\u202fle\u00e7ons \u2014 double points\u202f!','Survis au parcours de sc\u00e9narios de la vraie vie','C\u00e9l\u00e8bre\u202f: tu peux maintenant tenir une conversation en anglais'],
+wuTitle_fr:'Le grand \u00e9chauffement\u202f: le\u00e7ons\u202f1 \u00e0 3',
+wu_fr:['(L1) Tu rencontres la m\u00e8re de ton ami pour la premi\u00e8re fois\u202f:','(L2) \u00ab\u202fWhat do you do?\u202f\u00bb \u2014 la r\u00e9ponse naturelle\u202f:','(L3) \u00ab\u202fI ______ check my phone before bed\u2026\u202f\u00bb (100\u202f%)','(L3) \u00ab\u202fA quarter past eight\u202f\u00bb, c\u2019est\u2026'],
 vfr:[
- ['Le salueur (S1)','\u00ab\u202fNice to meet you!\u202f\u00bb + une question de suivi.'],
+ ['Le salueur (L1)','\u00ab\u202fNice to meet you!\u202f\u00bb + une question de suivi.'],
  ['Le conteur (S2, S11)','Ta pr\u00e9sentation + ton histoire du lundi.'],
- ['Le commandeur (S4)','\u00ab\u202fI\u2019d like\u2026 please.\u202f\u00bb'],
- ['Le magasineur (S5)','\u00ab\u202fHow much is this?\u202f\u00bb'],
- ['Le navigateur (S6)','\u00ab\u202fExcuse me, how do I get to\u2026?\u202f\u00bb'],
- ['Le planificateur (S7)','\u00ab\u202fAre you free on\u2026?\u202f\u00bb Confirme jour, heure, lieu.'],
- ['L\u2019appelant (S8)','\u00ab\u202fCould you repeat that?\u202f\u00bb'],
- ['Le diplomate (S10)','\u00ab\u202fI see your point, but\u2026\u202f\u00bb']],
-tipVocab_fr:'<b>Voici ta bo\u00eete \u00e0 outils.</b> Onze s\u00e9ances, huit personnages, un seul TOI. Retourne chaque carte et dis sa phrase cl\u00e9 \u00e0 voix haute \u2014 c\u2019est l\u2019\u00e9chauffement pour le parcours.',
+ ['Le commandeur (L4)','\u00ab\u202fI\u2019d like\u2026 please.\u202f\u00bb'],
+ ['Le magasineur (L5)','\u00ab\u202fHow much is this?\u202f\u00bb'],
+ ['Le navigateur (L6)','\u00ab\u202fExcuse me, how do I get to\u2026?\u202f\u00bb'],
+ ['Le planificateur (L7)','\u00ab\u202fAre you free on\u2026?\u202f\u00bb Confirme jour, heure, lieu.'],
+ ['L\u2019appelant (L8)','\u00ab\u202fCould you repeat that?\u202f\u00bb'],
+ ['Le diplomate (L10)','\u00ab\u202fI see your point, but\u2026\u202f\u00bb']],
+tipVocab_fr:'<b>Voici ta bo\u00eete \u00e0 outils.</b> Onze le\u00e7ons, huit personnages, un seul TOI. Retourne chaque carte et dis sa phrase cl\u00e9 \u00e0 voix haute \u2014 c\u2019est l\u2019\u00e9chauffement pour le parcours.',
 chatTitle_fr:'La boucle boucl\u00e9e\u202f: de retour au caf\u00e9 \u2615',
-chatIntro_fr:'Tu te souviens de la s\u00e9ance\u202f1\u202f? Maria et David \u2014 six semaines plus tard.',
+chatIntro_fr:'Tu te souviens de la le\u00e7on\u202f1\u202f? Maria et David \u2014 six semaines plus tard.',
 cfr:[
  'Maria\u202f! Par ici \u2014 je t\u2019ai gard\u00e9 ta place.',
  'David\u202f! D\u00e9sol\u00e9e du retard \u2014 je suis descendue au mauvais arr\u00eat et j\u2019ai d\u00fb marcher trois p\u00e2t\u00e9s de maisons.',
@@ -1626,22 +1626,22 @@ teach_fr:[
  'Tout ce qui suit est m\u00e9lang\u00e9 \u2014 les salutations \u00e0 c\u00f4t\u00e9 des directions \u00e0 c\u00f4t\u00e9 du pass\u00e9, exactement comme la vraie vie. Lis chaque sc\u00e9nario lentement. <b>Les vraies conversations n\u2019arrivent pas avec des \u00e9tiquettes.</b>',
  'Chaque question vaut <b>le double des points</b>. Les r\u00e9ponses du premier coup comptent, alors respire, lis deux fois, r\u00e9ponds une fois. C\u2019est aussi un excellent conseil pour les vraies conversations.',
  'Apr\u00e8s la ronde du boss, ton instructeur lance le parcours EN DIRECT \u2014 les missions de conversation. C\u2019est l\u00e0 que les points \u00e0 l\u2019\u00e9cran deviennent de la confiance dans le monde.'],
-pq_fr:['(S4) Le serveur apporte du th\u00e9\u202f; tu as command\u00e9 du caf\u00e9\u202f:','(S5) Le manteau est \u00e0 80\u202f$ mais l\u2019affiche dit 25\u202f% de rabais. \u00c0 la caisse, \u00e7a sonne 80\u202f$\u202f:','(S6) Un visiteur demande comment se rendre \u00e0 la pharmacie \u2014 un p\u00e2t\u00e9 tout droit, \u00e0 c\u00f4t\u00e9 de la banque\u202f:','(S7) Tu dois refuser une invitation du dimanche (d\u00eener de famille) mais tu veux te voir\u202f:','(S8) La personne parle trop vite et tu as besoin de son nom \u00e0 l\u2019\u00e9crit\u202f:','(S9) \u00c0 la clinique\u202f: \u00ab\u202fWhat brings you in today?\u202f\u00bb'],
-matchTitle_fr:'Le grand appariement\u202f: s\u00e9ance \u00e0 superpouvoir',
+pq_fr:['(L4) Le serveur apporte du th\u00e9\u202f; tu as command\u00e9 du caf\u00e9\u202f:','(L5) Le manteau est \u00e0 80\u202f$ mais l\u2019affiche dit 25\u202f% de rabais. \u00c0 la caisse, \u00e7a sonne 80\u202f$\u202f:','(L6) Un visiteur demande comment se rendre \u00e0 la pharmacie \u2014 un p\u00e2t\u00e9 tout droit, \u00e0 c\u00f4t\u00e9 de la banque\u202f:','(L7) Tu dois refuser une invitation du dimanche (d\u00eener de famille) mais tu veux te voir\u202f:','(L8) La personne parle trop vite et tu as besoin de son nom \u00e0 l\u2019\u00e9crit\u202f:','(L9) \u00c0 la clinique\u202f: \u00ab\u202fWhat brings you in today?\u202f\u00bb'],
+matchTitle_fr:'Le grand appariement\u202f: le\u00e7on \u00e0 superpouvoir',
 pairs_fr:[
- ['Session 1','Salutations et questions de suivi'],
- ['Session 4','Commander \u00e0 manger poliment'],
- ['Session 7','Invitations et refus poli'],
- ['Session 10','\u00catre d\u2019accord et pas d\u2019accord avec des ponts'],
- ['Session 11','Raconter au pass\u00e9']],
+ ['Lesson 1','Salutations et questions de suivi'],
+ ['Lesson 4','Commander \u00e0 manger poliment'],
+ ['Lesson 7','Invitations et refus poli'],
+ ['Lesson 10','\u00catre d\u2019accord et pas d\u2019accord avec des ponts'],
+ ['Lesson 11','Raconter au pass\u00e9']],
 ti_fr:[
- '(S1) \u00ab\u202fNice to meet you.\u202f\u00bb \u2192 \u00ab\u202fNice to meet you, ______!\u202f\u00bb',
- '(S7) \u00ab\u202fHow ______ Saturday instead?\u2026\u202f\u00bb (proposer, en anglais)',
- '(S10) \u00ab\u202fI see your point, but I ______\u2026\u202f\u00bb (le contraire de \u00ab\u202fagree\u202f\u00bb)',
- '(S11) \u00ab\u202fLast month I ______ to Miami\u2026\u202f\u00bb (pass\u00e9 de \u00ab\u202fgo\u202f\u00bb)'],
+ '(L1) \u00ab\u202fNice to meet you.\u202f\u00bb \u2192 \u00ab\u202fNice to meet you, ______!\u202f\u00bb',
+ '(L7) \u00ab\u202fHow ______ Saturday instead?\u2026\u202f\u00bb (proposer, en anglais)',
+ '(L10) \u00ab\u202fI see your point, but I ______\u2026\u202f\u00bb (le contraire de \u00ab\u202fagree\u202f\u00bb)',
+ '(L11) \u00ab\u202fLast month I ______ to Miami\u2026\u202f\u00bb (pass\u00e9 de \u00ab\u202fgo\u202f\u00bb)'],
 missions_fr:[
  'LE PARCOURS\u202f: avec ton instructeur, encha\u00eene 3\u202fsc\u00e8nes rapides \u2014 rencontrer un inconnu, commander un d\u00eener, faire des plans de fin de semaine. Sans notes\u202f!',
- 'Raconte ton \u00ab\u202fhistoire du lundi\u202f\u00bb pr\u00e9par\u00e9e \u00e0 la s\u00e9ance\u202f11 \u2014 ton/ta partenaire doit r\u00e9agir au moins 3\u202ffois.',
+ 'Raconte ton \u00ab\u202fhistoire du lundi\u202f\u00bb pr\u00e9par\u00e9e \u00e0 la le\u00e7on\u202f11 \u2014 ton/ta partenaire doit r\u00e9agir au moins 3\u202ffois.',
  'Le tour d\u2019honneur\u202f: en 4\u202fphrases, raconte l\u2019histoire de CE programme au pass\u00e9. \u00ab\u202fFirst, I learned\u2026 Then\u2026 Finally\u2026\u202f\u00bb'],
 culture_fr:[
  'La fluidit\u00e9, ce n\u2019est pas la perfection \u2014 c\u2019est le <b>flot</b>. Les anglophones font des fautes de grammaire chaque jour\u202f; ce qu\u2019ils ne font jamais, c\u2019est arr\u00eater de parler. Tu as maintenant les outils pour continuer\u202f: \u00ab\u202fCould you repeat that?\u202f\u00bb, \u00ab\u202fHow about\u2026?\u202f\u00bb, \u00ab\u202fI think\u2026\u202f\u00bb.',
@@ -1649,25 +1649,25 @@ culture_fr:[
 boss_fr:['LE BOSS FINAL\u202f: nouvelle ville, un nouveau coll\u00e8gue dit \u00ab\u202fWe should grab lunch sometime!\u202f\u00bb La r\u00e9ponse du CHAMPION\u202f:','LA QUESTION DE LA VICTOIRE\u202f: choisis le paragraphe o\u00f9 tout est bien fait\u202f:'],
 challenge_fr:'Ton monde vient de s\u2019agrandir. Continue de le faire grandir\u202f: une vraie conversation en anglais chaque jour cette semaine \u2014 une salutation, une commande, un avis, une histoire. Tu as tous les outils. Utilise-les\u202f!',
 next_fr:'Tu as termin\u00e9 l\u2019anglais conversationnel A1\u2013A2\u202f! Demande \u00e0 ton instructeur au sujet du programme B1\u2013B2 \u2014 le m\u00eame parcours, des eaux plus profondes. \u00c9DUQUER. HABILITER. EXCELLER.',
-t:'The Conversation Challenge',sub:'Capstone · Sessions 1–11 Review',
-obj:['Prove your skills across all 11 sessions — double points!','Survive the real-world scenario gauntlet','Celebrate: you can now hold a conversation in English'],
-wuTitle:'The Grand Warm-Up: Sessions 1–3',
+t:'The Conversation Challenge',sub:'Capstone · Lessons 1–11 Review',
+obj:['Prove your skills across all 11 lessons — double points!','Survive the real-world scenario gauntlet','Celebrate: you can now hold a conversation in English'],
+wuTitle:'The Grand Warm-Up: Lessons 1–3',
 wu:[
- {q:'(S1) You meet your friend\'s mother for the first time:',p:10,a:'It\'s a pleasure to meet you.',d:['Yo! What\'s up?','You are the mother.','Hello, old person.']},
- {q:'(S2) "What do you do?" — the natural answer:',p:10,a:'I work as a nurse at City Hospital. What about you?',d:['I do things with my hands and mind.','Working is my activity.','I am doing fine.']},
- {q:'(S3) "I ________ check my phone before bed — every single night." (100%)',p:10,a:'always',d:['never','rarely','sometimes']},
- {q:'(S3) "A quarter past eight" is…',p:10,a:'8:15',d:['7:45','8:45','8:25']}],
+ {q:'(L1) You meet your friend\'s mother for the first time:',p:10,a:'It\'s a pleasure to meet you.',d:['Yo! What\'s up?','You are the mother.','Hello, old person.']},
+ {q:'(L2) "What do you do?" — the natural answer:',p:10,a:'I work as a nurse at City Hospital. What about you?',d:['I do things with my hands and mind.','Working is my activity.','I am doing fine.']},
+ {q:'(L3) "I ________ check my phone before bed — every single night." (100%)',p:10,a:'always',d:['never','rarely','sometimes']},
+ {q:'(L3) "A quarter past eight" is…',p:10,a:'8:15',d:['7:45','8:45','8:25']}],
 vocab:[
- ['The Greeter (S1)','"Nice to meet you!"<br><b>+ one follow-up question.</b>'],
+ ['The Greeter (L1)','"Nice to meet you!"<br><b>+ one follow-up question.</b>'],
  ['The Storyteller (S2, S11)','Your intro + your Monday story.<br><b>"Guess what happened…"</b>'],
- ['The Orderer (S4)','"I\'d like… please."<br><b>"Could we have the check?"</b>'],
- ['The Shopper (S5)','"How much is this?"<br><b>"Can I try it on?"</b>'],
- ['The Navigator (S6)','"Excuse me, how do I get to…?"<br><b>Repeat directions back!</b>'],
- ['The Planner (S7)','"Are you free on…?"<br><b>Confirm: day, time, place.</b>'],
- ['The Caller (S8)','"Could you repeat that?"<br><b>4-line voicemail formula.</b>'],
- ['The Diplomat (S10)','"I see your point, but…"<br><b>Bridge first, opinion second.</b>']],
-tipVocab:'<b>This is your toolkit.</b> Eleven sessions, eight personas, one YOU. Flip each card and say its key phrase out loud — this is the warm-up for the gauntlet.',
-chatTitle:'Full circle: back at the coffee shop ☕',chatIntro:'Remember Session 1? Maria and David — six weeks later.',
+ ['The Orderer (L4)','"I\'d like… please."<br><b>"Could we have the check?"</b>'],
+ ['The Shopper (L5)','"How much is this?"<br><b>"Can I try it on?"</b>'],
+ ['The Navigator (L6)','"Excuse me, how do I get to…?"<br><b>Repeat directions back!</b>'],
+ ['The Planner (L7)','"Are you free on…?"<br><b>Confirm: day, time, place.</b>'],
+ ['The Caller (L8)','"Could you repeat that?"<br><b>4-line voicemail formula.</b>'],
+ ['The Diplomat (L10)','"I see your point, but…"<br><b>Bridge first, opinion second.</b>']],
+tipVocab:'<b>This is your toolkit.</b> Eleven lessons, eight personas, one YOU. Flip each card and say its key phrase out loud — this is the warm-up for the gauntlet.',
+chatTitle:'Full circle: back at the coffee shop ☕',chatIntro:'Remember Lesson 1? Maria and David — six weeks later.',
 chat:[
  ['p2','David','Maria! Over here — I saved your seat.'],
  ['p1','Maria','David! Sorry I\'m late — I got off at the wrong stop and had to walk three blocks.'],
@@ -1685,27 +1685,27 @@ teach:[
  'Every question is worth <b>double points</b>. First-try answers count, so breathe, read twice, answer once. That\'s also great advice for real conversations.',
  'After the Boss Round, your instructor runs the LIVE gauntlet — the speaking missions. That\'s where the points on the screen become confidence in the world.'],
 pq:[
- {q:'(S4) The server brings tea; you ordered coffee:',p:10,a:'Excuse me — I\'m sorry, but I ordered coffee, not tea.',d:['Tea is a personal attack.','Wrong liquid!','I will drink it sadly.']},
- {q:'(S5) The jacket is $80 but the sign says 25% off. At the register it rings up $80:',p:10,a:'Excuse me — I think this is on sale. The sign says 25% off.',d:['You are stealing from my wallet.','Eighty is not the number of my heart.','I saw a sign once.']},
- {q:'(S6) A visitor asks how to reach the pharmacy — one block straight, beside the bank:',p:10,a:'Go straight one block — it\'s next to the bank. You can\'t miss it.',d:['Pharmacy lives near money house.','Walk and look everywhere.','It is in this city, good luck.']},
- {q:'(S7) You must decline a Sunday invitation (family lunch) but want to meet:',p:10,a:'I\'d love to, but I can\'t Sunday — family lunch. How about Monday evening?',d:['Sunday is full of relatives, goodbye.','No.','Family exists, so you don\'t.']},
- {q:'(S8) The caller speaks too fast and you need their name in writing:',p:10,a:'Sorry, could you speak more slowly — and could you spell your name for me?',d:['Fast words are illegal here.','Name! Letters! Slower!','I will guess your name from sounds.']},
- {q:'(S9) At the clinic: "What brings you in today?"',p:10,a:'I\'ve had a bad cough since Friday, and my chest hurts.',d:['My body has betrayed me, doctor.','Sickness brings me, obviously.','A bus brings me in today.']}],
-matchTitle:'The Grand Match: session to superpower',
+ {q:'(L4) The server brings tea; you ordered coffee:',p:10,a:'Excuse me — I\'m sorry, but I ordered coffee, not tea.',d:['Tea is a personal attack.','Wrong liquid!','I will drink it sadly.']},
+ {q:'(L5) The jacket is $80 but the sign says 25% off. At the register it rings up $80:',p:10,a:'Excuse me — I think this is on sale. The sign says 25% off.',d:['You are stealing from my wallet.','Eighty is not the number of my heart.','I saw a sign once.']},
+ {q:'(L6) A visitor asks how to reach the pharmacy — one block straight, beside the bank:',p:10,a:'Go straight one block — it\'s next to the bank. You can\'t miss it.',d:['Pharmacy lives near money house.','Walk and look everywhere.','It is in this city, good luck.']},
+ {q:'(L7) You must decline a Sunday invitation (family lunch) but want to meet:',p:10,a:'I\'d love to, but I can\'t Sunday — family lunch. How about Monday evening?',d:['Sunday is full of relatives, goodbye.','No.','Family exists, so you don\'t.']},
+ {q:'(L8) The caller speaks too fast and you need their name in writing:',p:10,a:'Sorry, could you speak more slowly — and could you spell your name for me?',d:['Fast words are illegal here.','Name! Letters! Slower!','I will guess your name from sounds.']},
+ {q:'(L9) At the clinic: "What brings you in today?"',p:10,a:'I\'ve had a bad cough since Friday, and my chest hurts.',d:['My body has betrayed me, doctor.','Sickness brings me, obviously.','A bus brings me in today.']}],
+matchTitle:'The Grand Match: lesson to superpower',
 pairs:[
- ['Session 1','Greetings & follow-up questions'],
- ['Session 4','Ordering food politely'],
- ['Session 7','Invitations & polite declining'],
- ['Session 10','Agreeing & disagreeing with bridges'],
- ['Session 11','Past-tense storytelling']],
+ ['Lesson 1','Greetings & follow-up questions'],
+ ['Lesson 4','Ordering food politely'],
+ ['Lesson 7','Invitations & polite declining'],
+ ['Lesson 10','Agreeing & disagreeing with bridges'],
+ ['Lesson 11','Past-tense storytelling']],
 ti:[
- {q:'(S1) "Nice to meet you." → "Nice to meet you, ________!"',a:['too']},
- {q:'(S7) "How ________ Saturday instead? I\'m free after 5." (suggesting)',a:['about']},
- {q:'(S10) "I see your point, but I ________ — the morning flight is better." (opposite of agree)',a:['disagree']},
- {q:'(S11) "Last month I ________ to Miami to visit my aunt." (past of "go")',a:['went']}],
+ {q:'(L1) "Nice to meet you." → "Nice to meet you, ________!"',a:['too']},
+ {q:'(L7) "How ________ Saturday instead? I\'m free after 5." (suggesting)',a:['about']},
+ {q:'(L10) "I see your point, but I ________ — the morning flight is better." (opposite of agree)',a:['disagree']},
+ {q:'(L11) "Last month I ________ to Miami to visit my aunt." (past of "go")',a:['went']}],
 missions:[
  'THE GAUNTLET: with your instructor, run 3 rapid scenes — meet a stranger, order lunch, make weekend plans. No notes!',
- 'Tell your prepared "Monday story" from Session 11 — your partner must react at least 3 times.',
+ 'Tell your prepared "Monday story" from Lesson 11 — your partner must react at least 3 times.',
  'The victory lap: in 4 sentences, tell the story of THIS program in the past tense. "First, I learned… Then… Finally…"'],
 culture:[
  'Fluency is not perfection — it\'s <b>flow</b>. Native speakers make grammar mistakes daily; what they never do is stop talking. You now have the tools to keep going: "Could you repeat that?", "How about…?", "I think…".',
@@ -1746,7 +1746,7 @@ var WEEKS=[['Week 1','First Contact'],['Week 2','Daily Life'],['Week 3','Out in 
 function renderMenu(){
   var html='';
   for(var w=0;w<6;w++){
-    html+='<div class="weeklabel"><b>'+WEEKS[w][0]+'</b><i>'+WEEKS[w][1]+' · (Sessions '+(w*2+1)+' &amp; '+(w*2+2)+' — or weeks '+(w*2+1)+' &amp; '+(w*2+2)+' in the 12-week format)</i></div><div class="sess-grid">';
+    html+='<div class="weeklabel"><b>'+WEEKS[w][0]+'</b><i>'+WEEKS[w][1]+' · (Lessons '+(w*2+1)+' &amp; '+(w*2+2)+' — or weeks '+(w*2+1)+' &amp; '+(w*2+2)+' in the 12-week format)</i></div><div class="sess-grid">';
     for(var k=0;k<2;k++){
       var n=w*2+k, S=SESSIONS[n];
       var done=(n in sessionScores)?'<span class="sess-done">✓ '+sessionScores[n]+'/'+S.max+'</span>':'';
@@ -1773,7 +1773,7 @@ function mcHTML(holder,items,letterSlice){
   return html;
 }
 
-/* ---------- build a session ---------- */
+/* ---------- build a lesson ---------- */
 function buildSession(n){
   cur=SESSIONS[n];cur.n=n;
   score=0;firstTry={};solved={};MC_PTS={};msel=null;spoiled={};tiFirst={};tiDone={};chatIdx=0;celebrated=false;
@@ -1783,7 +1783,7 @@ function buildSession(n){
   document.getElementById('pts').textContent='0';
   document.getElementById('ptsmax').textContent=cur.max;
   document.getElementById('prog').style.width='0%';
-  document.getElementById('hud-title').textContent='Session '+(n+1)+': '+cur.t;
+  document.getElementById('hud-title').textContent='Lesson '+(n+1)+': '+cur.t;
 
   var deckHTML=cur.vocab.map(function(v,vi){
     var f=cur.vfr&&cur.vfr[vi]?cur.vfr[vi]:['',''];
@@ -1797,7 +1797,7 @@ function buildSession(n){
     var tf=cur.ti_fr&&cur.ti_fr[i]?cur.ti_fr[i]:'';
     return '<div class="ti-row"><p class="ti-q">'+(i+1)+'. '+escapeHTML(t.q)+'</p>'+G(tf)+'<div class="ti-wrap"><input class="ti" id="ti-'+i+'" autocomplete="off" placeholder="Type your answer…"><button class="btn small" data-ti="'+i+'">Check ✓</button></div><p class="feedback" id="tifb-'+i+'"></p></div>';
   }).join('');
-  /* deterministic match display order: rotate by session number */
+  /* deterministic match display order: rotate by lesson number */
   var lo=[],ro=[];for(var r=0;r<5;r++){lo.push((r+n)%5);ro.push((r*2+n+1)%5);}
   var mHTML='';
   for(r=0;r<5;r++){
@@ -1813,7 +1813,7 @@ function buildSession(n){
   +'<img class="logo-hero" alt="KingCretot Experience" src="data:image/png;base64,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">'
   +'<div class="eyebrow"><span>Conversational English · A1–A2</span></div>'
   +'<h1>'+escapeHTML(cur.t)+'</h1>'
-  +'<p class="sub" style="color:#C9D2E8">Session '+(n+1)+' of 12 · '+escapeHTML(cur.sub)+dbl+'</p>'
+  +'<p class="sub" style="color:#C9D2E8">Lesson '+(n+1)+' of 12 · '+escapeHTML(cur.sub)+dbl+'</p>'
   +'<div style="max-width:640px;margin:26px auto 8px">'+cur.obj.map(function(o,oi){var of=cur.obj_fr&&cur.obj_fr[oi]?cur.obj_fr[oi]:'';return '<div class="objective"><b>✦</b><span>'+o+GH(of)+'</span></div>';}).join('')+'</div>'
   +'<p class="center" style="color:#C9D2E8;font-size:19px;margin-top:14px">Earn up to <b style="color:var(--gold)">'+cur.max+' points</b> — awarded for <b style="color:var(--gold)">first-try</b> answers. Miss one? No problem, retry until it\'s green!</p>'
   +'<div class="navrow" style="margin-top:24px"><button class="btn gold" data-go="next">Begin the Experience →</button></div></div></section>'
@@ -1861,18 +1861,18 @@ function buildSession(n){
   +'<section class="slide"><div class="stepnum">Step 8 of 9 · Boss Round</div><div class="card" style="border:2px solid var(--gold)">'
   +'<div class="eyebrow"><span>★ Boss Round ★</span></div><h2>Double points. Read carefully!</h2>'
   +'<p class="sub">2 questions · '+cur.boss[0].p+' points each</p><div id="boss">'+mcHTML('boss',cur.boss,cur.letters.slice(10,12))+'</div>'
-  +'<div class="navrow"><button class="btn gold" data-go="next">Finish the Session →</button></div></div></section>'
+  +'<div class="navrow"><button class="btn gold" data-go="next">Finish the Lesson →</button></div></div></section>'
 
   +'<section class="slide"><div class="card dark">'
   +'<img class="logo-hero" alt="KingCretot Experience" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAABzCAYAAAC1g5g5AABOh0lEQVR42u2dd7xcRdnHvzOnbL01N733Tho1tFAiLRSpYkHlRRQVC4qKCgoWRAFBEEQRpKMiSO9FSoBAEkgIIb3e5N7cfrfvKfP+Mbub29IQIZDz47Mk2Z2dmTPn7G+eeaqIjp6lCBAgQIAAux1ksAQBAgQIEBB0gAABAgQICDpAgAABAoIOECBAgAABQQcIECBAQNABAgQIECAg6AABAgQIEBB0gAABAgQEHSBAgAABAoIOECBAgICgAwQIECBAQNABAgQIECAg6AABAgQICDpAgAABAgQEHSBAgAABQQcIECBAgICgAwQIEGBPhPlBdygAIYKF3REUoIJaNgECBPgwCdpTkM0VKSjAtmCbAssIVilAgAAfAkGLAjmXhQV7DxdYRiBGb1N6VrCm0aeuVWEagSQdIECA/zVBC8jmYcoQwS9OtXlvk0IGGu5ucF3FuIEGd7zi8LfnHeyYwAsIOkCAAP9LgtaiIZgSVtQpzrs1h2EEC9wRhoR8QnHRGTa2SaDfCBAgwIdI0B2IKGSBGRB0t3VxbL2JBQqgAAECfCQEDVqvGuhWgzUJECDA+0egJQ4QIECAgKADBAgQIEBA0AF2a4g9NJKpGMQV2B8C7CzMYAn2HBhS7jQ5er6P2obC3NyBe46vfHxf9UjMQoDr+limga/UNsf4JGxCUgqEECil8H39Khoh9FoIZOFPAIVeD/0KntcAAUHvUVJroi0BjlMQ40TnmPyiBVMpUGBXlmGZZicCFQXibm9uK5y/OvTR8fvRCLFIuPN3hSCfd3A9j4qyOK1t7YTCIUzD+ESRtCZlSS6fJ5/JguuBaWBYFpZlIaUmbNfzcBwX5XrgeYACaSBtC7vQLkCAgKD3AEghyGSzXPL9rzB14hhy+TyuqwkCUeAGKQmFLCzTxDAMfnT5H1m5rpawbaOUQgiB47rUVFVw1dU/xTJN0tkcruPiK4VtmViWSci2ueffT3H/I88SjcfwfB8hBK7j0K93NTf8+gdMHj+SZ19+k+/+/Pc4joc0xCdCYjQNg2Q6g5/L039gP/Y77AD2nTqRyeNGMmxwf3pVlmPbFp7vk85kaW5pZ1N9I+s31bF2Yx2r1m5k5dqNrN9UTz6XD5LaBAgIeo+RoBG0JZLEohEmjB7GyKGDMLs4qtdtaWJdbR0r124kn3eQXQiiSNKO6zFuxFDGjR5GOGSXPl+6ci2r19WSTGf00b4kVUpymRy//tF5zDnyQADOPmMOq9bV8uur/kJ5dSWu532sTycCaG9uZdLksZz/5dM4fvZB9O9TU2qzub6R2vpGUukMpmlQXVHG6BGDmT55bDfV0t8feobPf/MSYvEYvu8HD29A0AE+yfCVIhQOce1Nd3PtjXeB63LUsYfxyN+uxHFcLNPk4Wde5uQvfk9H0+Qc7MoybMsqqR+UUhhSks7kOOuL3yPWrzdP33s9B8yYxFMvzuML5/+MLU0tkMtDOEQsGimRi1IKDMno4YPxPJ90Nks8GmHMiMEfe8dwIQTK90lnc/z4gnP4ybe+RDQSBuDtd1dw4+3388Lc+WyoayCdzoLvAQLDMikvjzNyyAAO2W8apx9/BPtNm4ghJQP61qB2Y1NiSWf+Ed27j3r8gKADfOBQSlFWUY5hGLS1teO6ntb/+grTLOiBhaCyqgLfVz0aCQ3DIJPOMHDsCB685XfM2GscT704j1PO+SHZXJ6yeAzK4qguRkIhQPqKG2+/n7/9/mLKYlEy2Ry33vsIRsjG/5j+0IQQoBT5nMNt11zCF045Br+wbpdffzu/vOavZJJpjEgY2zKJxyMIRCHVrCKdyfLmovd4883F/P4v9/ClM+Zwy5U/KR55dttrzuUdhADLND+S8fOOA3w043/YCNzs9iB4vo/neVoaNrqrL4QQeL6PW2jTaSc3DNKpNL17VfHgrVcyY69xPPrsXD599oU4rkckGi7139WDw/N8ImUxbr/vMY4881tccNm1HHzy13jx9YWEY9Hd/hgvpezRc0VKSSqR5JpfXMAXTjmGbC6PlJKfXvlnfvKz3yMNg/JelURCNlKI0sZXJHHTMIjHolTUVGHbNnc98CTtyRSxaKS4q+5e0pxhkGpLcM6Zx/PagzcTjYTxPP9Dc5s0DEk6keT4Iw/itYdupl/vaq2K+wQbVAMJeo+VqHt4b1sPiWmQTKbp36cXj9x+NVMnjObfT77Imef9FARYtoXn+TuU4GOxCM++NI9nn3sFGQ4T+y/JWfOC+K+PulsJprN7m5QSISCRTEMuT7g8jiElqnCaSLS1c9Jxh/ONL55CLpcnHLJ58j+v8eurbqasbw2+7+O63nbXRLvg+ViWSSadYd3GOirL49u9HzuldtmJNdkVVYEAHNelrLKMS759Nv371mBb5vta+46Evivf932FaVlc/J2zmTphNOFQ6GN7+gok6AAfzA5uGiQTKQb2681jd17D1Amjue/R5/nM134MQmBa1g5J1pAS0zSQUlJVWU51nxrK47EedwlZaNvp1UF6lUJgGgaGlPi+KhGgaRjdjJrbIwjDMDAK/Xqeh+tqyb/Uv2GQTKVJtLQza+YMfvPz7xKNRkpeKZ7nEYlG+OUPvoZSYJgGnu/z86v/ijTNAtmrXSItP5vj9YVLSKYzyA65eo0drIleNz1vIdimwVUUNhbD0H27rldq2/H9nmBZFplkms+c+Cn6962hrqEJyzQ7zWl7krRhyML8RGm9Pc9DlNZ7+1RkWSaZZJpjjjyQqRNGk83luq3JJ1GSDiToANsl50QixZABfXn0jt8zccxw7nnoab54/s8xLRPDNHdIzkIIEu0JbTwUgo5Jwo1ImHA4VCIyIQTJRAqyWd2u+IOXknhlOUII0pksXiYLpjayhUI2qXSG9pY2rEiYUMje7pyklHieR6otoaX/SIRoOKQ9TfJ5UpksKpcHKZm531S+c84ZnDbnCGrrG7j6prs0GRuS9pZ2TppzOBPHDNeGVstk7puLmbdwCdF4dIcnim7qJ88jXFHGD351PbZlEQ5tdW9MtCUgn++2JtHyeEnKT6Wz+NksdixGWVzr+Ltet+/7JFrbQAgisSjRSBiFIpPNkU4kQUji5bGCO3vnzaW1rR0MyXf+74ySwbihuZV0QzPYFiiFGY0QKsy747hKKRLtSfA8jHCYWCSMaRq4nkc6k8PNZEAaxMpieqPq4f4lkmn8bI7vfeWzhX1d0NTSTr6hmXw0DL5CRsJEOjxPAUEH+GSTc3uK4YP788gdVzN+1DDuuP8Jzv7OZVghG8MwdkjOUkqy6Qxf+cLJ7DNlPNlcnmwuh+v5GFLy6HNzefX1twgVdK7ZVJozTz6KWQdMJ5XOkM87CCFobm3nihvugFyeUWNHcMxhB3DEQfswbuQQyuMxmlvb+c9rC7nyT3exrraOaAcPks5SnEEimaI8HuW0M0/g6Fn7sc+UCQzoW4NlmrQlkqxaV8uCxcvo06uKk4+dhRCCletqOeyUr9Hc2k44EtYEoXxOPfYwlNJ6ZQt47Pm5+NkcMh7l/WhuhBBkcnnSmSyGoSXCbCbL188+nSkTRpPOZAoGOkFTSxs33flvEqk0fj7PpIljOG3OERx3xEyEEBzxmfPJZnNIw8CQgnQ6i22ZfO604zhh9sHsPWU8AwpqmPW19byxaCn/evR5Hn76JSzL2mo4LhiPp0wYxdmfOYEJY4ajlCIei/LrH55HOpMtxDwJ7n/8BRYueo9QJIzv+xiGJJPJgVIcd+RBzDnyIPafPolhg/sTCYfIZHOs2bCJN956l0eeeYXHn38VpRTRaLjTBqd8n3EjhnDGibM5eL+pgPa7v/jbX6axpRXDkAgET704j5fmzie0jfsfEHSATww5t7cnGTl0EI/fdQ2jhw3i1n88yjnf+yXhcAi5E+TcEelMlprqSiaOHcGY4YNL7ze1tvPif14nEoviF6TFTCZH/9692H/GJHpXVwKQy+VZunItX/3sSRx7xMxu/ffvW8PEsSM4fvZBHHHGN1m3YTN22O5krDQMSSKR5IAZk/nzFT9i0riRAKxaV8uDT71EOpNl6MC+HHnwvuw3bWJJP7po6UpOPueHbKpvJBaPlYysZVWVHDBjMkKIkjfBG28thfepl92qzhAgO/YhyGRzDOrfm32nTqCmsCbpTJbf/ekuRg8bxE+//WXOPPFTJb/2zVuaSk4gppQkkynGjhrKLVf9lP2nTwKgrqGZZ156A9M0OPSAaYwbNZQvnHw09z/+Av93wS/J5h1My8TJO/zrL7/huMK6F6X6SDjEt//v9E5zX7NhE/PmvU0kGgFDkkplGDlkIDdcfiFHHrwvAMlUmjfeXkoikaJ3TRX7T5/MtIljOPdzJ/Hc3Pl8/aLfsmL1emLxKEpBKpXm1qsv5ounHVuynRQN2l/9/Emdxs/lHZ577hX9PAUSdIBPJjmbtLS0MWbEEB6/8xpGDBnAdbf+k+9ccjXhcBhpiJ0mZ9/3CUXC3PWvx7nrjgeI9q5m6Qv3MqAQwJHJ5EpHdt/3sSNhHnzqRf595wN86pSjefS2q/VYQnDdZd9j3cbNXHfrP1m3sY50JkPvXlWcccJsJoweRjaXZ/CAvvzmJ9/klLMvJBQJUTSzSSnJpLNMHj+Kx++8hoqyGK7r8cPL/8jv/3wPKu+UJMXRo4fzjz//momjh2OaBpu3NLFq7UbKKsrwXA8pJelMlpFDBzJkQN8S+edyedZs3IRhWT3mIdlZaF5WhTXR/uu3/v1hbr3hDr0mf7tKH/lTaa699Luc/+XTAEilM2xpTjOgTy9y+fzWE0w2x9BB/Xn6nusY2K83Sil+dd1tXH7traTTGVCK/v17c+f1l3HYzBmcfMwsLNPk02f/AMM0MEyDK264g5/99kbmHHUoP7/gHADaEilO++qPaW5rL+nDN2yqJxyPoZQil80xdFA/nv3H9QwurNOvr7+NK2+4k5bWNvAVGAZDB/Xl8h9/kzNPnM3hM2fw3D/+yKxTz2Pthk2Ew1pldeOd93P9Lf9g/70nc90vvlc6tZxx3k9ZvX4T4ZAFCjZtaSJcVob3CQruCQg6wFaVhGnQ2ppg3MihPH7XNQwb1B/f91m6ch1+NoddXlbygd15wlGUl5fhxWNEI2FMwyhJel2NOkopystiJBWEQ3bhmK11p8eedQFLFryjS/X4SucB8Xyu+fM9PP3369lnyng83+eoQ/ZlyNCBbK5rxLa3Btr4nseVF3+LijIdnffEC69x9TW3EKupxiiLFVJhSFa8t5ILf3kdT9/9BzzP56hD9+PTxx7OA48+S1lFme7LdRnUvw+maeB5HoZh0NzWTktre7fozP8WSikqK8pICEnItgpj+vTpVcWsA6Zz0eU38OqCd9iwqZ5Ee5IXH/gzfWqqSiTlOg5/vPwHDOzXG9/3ue+x57n40muIVFdSXlmOkILN9U2c+6MreOuJ24iEwxw/+yBOmXM4//j3U5RVlvPq/MW4TS2MHzeqNC/XdXlz0VJaGlsRtonyFXYhVYCvFMr3+etVP2XwgL74SnHLvQ/zk4uvJtyrqrCOOsfAxvpGPnveT0vXM6BvDbf+/mIOO+Xr+EphGAbzF72H29xOZVV5p3V5a8kKVi9fjYyG8T2FZZtYHYKrPhG/yYCWAoD2gvDbEkwaO4In7/kDwwb1x3FchBBc94sLOOzwmbS2tGJZu05A2/Kt3pbU7XleJxezoiuaXVlOZU0V5b2qKK+qpLpfb9pb2rjihjtKrmWxaIQRgwfgODpUXQpBJpNl7JgRHDZzOp7nI6Xk/sefR9oWpmGUvBkcxyFaXcm8t5ayYVM9hqENXEcftj94PqLwH55P715VJSkXoD2ZJpPJae+LD5ggiv7lW3X72hPihC9fyG8uv4H/vL6Q2vpGGuoauOyaW0o+1plkmoMPmM4xs/YvnXquuulujFgUyzRLCZsqKstZtXIdL7y6sHTNXz5jDkLqQJx4LIIsi3UK6xdCEI9FCcejxGNR4nHdp5SCdCLJcZ86mMMOmI7vK/K5PL+98U6sijIsS28wnufheT7xaBQhBZdc9Reds8XzOHDvvTjhmENJtSeRUhCLhpFlMaKRUKd1iUUjmPFYaXzbsj5xJYsCgg4AQGt7ghFjR/Dk3dcyZEBfkqkMlqWlIUNK7rj2Zwwc0JdskYQ+ZJSCaApk6noeecfBiEZYvnqDNkoV5lUWi4LvgwAhBV7eYfyooZ2y863dWIffRZeulCa/ZCrNhk1bSuOOHDoQCmtRbBiPRfVfC1tJNpvH9fxi7qkPBbFohFDvairiMUzDIFpdwUNPv8jhZ3wT31co1+XTRx9aUnesWlfLO8vXYIdDnVzxFArh+7y5aGnpmmdMHkfvPjXkHQelKAXXdN1MO77053qj/MLJR6OUQkrBW++uYPW6WkLhUDfvFsd1icSizF/8Hu+tXFvKbvj5kz7VYRxVGGNnxicg6ACfoAegoGYYN2oYz9x/E/379OI7P7+Gw8/4BplsTks1rsfAfr254w8/xy9IwrtF0v2CvrYojXUk89Lf0VJgRVms+IbWf2e1/ruHrNX4vk8mmy29E42EkcW0qIXvG93UM36JrD+0y1faD7wUll9wunhn2Woc18WIhEsGT9AG0Xw2R7hwcij5EEsDwzLZVN+oJXbPp6a6gkH9epN33J1WaQkBjuNQ1auK/aZNLN2Hxe+twsvmtumnbkpJLplmwTvLSvdvn6kTqKqp0qe4PbjEQUDQeziE0EfafaaMp3d1BSeefSHX3nQ3b8x7i/Mvvkr/qIQOajhs5gx+e8m3SLW07TCwYHdBwWV2q19wgUNte1vHYaVTr9pbj/OZTA6/GNKshUSyuTwdGd+2rJIE/1EjFg3jeR6VFWUMGdiv9P7GzVtw67bQ0tRKe1ML7Y361dzUjNvYwvraupI6CaCyIo7y/J1OeyqEJO9o/Xz/PjUlPfiGTfUFI+y2vgj4PmvWbyqpdPr1rmZw/z6FDWLPJejASLiHoygNr1y7kRO+fCFL311BRa8qFIq/3vYv9p4yga99/qSSauG753yG+Yve466/P0J5rypc1939r880WbuxrpN0Pahfb6Tn6xwZnY7Nilg0zMD+vUvfX7l2AxR02goFQtLUoosWFKXCsniUUMgmm82X9LgfFXxf4Xo+5fEY5YWTg1KKg/adwp/+8husUAilOp848jmHEcMGabdByyxtOruisBFoY2zvXlUYhsRxXAwpaWlLaJJX29lFhaCxsKa+p0Pfa6or8V1vj06LHRD0Hg4dUGCyYPEylr69lMoBfUoBItHKcr57yVVMnTia/adNLIVD/+nyH7D4vVW8s3RlyTd4tyVo3yccDvHOe6tYvb6WYYP6A/CpQ/fj7rv+XToJKLT/d0tTC/vvM4WhA/vpjH+mwcPPvAKGUShJBcIy2bCpvpB0Sn+/V1UF1RXlrE/VYRj2R3sqKhByyLawO2R8GzdyKONGDt3ud5OpDL7S+nzX83ctq54AfFVKt1rk41ze2al+Mtl8p+9FI+HCKSeQoAPs4bBtCxkJl8hWG3gkec/n89+8hNce/iu9qiq05T0W5Z4/XsbM488h5zgYu3HZKoVOS9ne0sbv/nQXN/76ByilOOP4I7n3uKd54pFnIRyioMchUhbnsu9/RXtCmAZP/Od1nnj2FWJlsVLmNtu2WL1hM5u3NDGgrz7KRyNhhg/uz+p1G4mEQnjvcz2KtQx9/7+v16gKL9/Xnis33/MQP7r0GsqqK3tM4iSFQBY2HIGgpa2dSCSC7/nvY+Qdv7WjRkFBmYCgA3RQBXQNQPF9n2gsyqpV6zn7+7/ioVt+Vyj66jFh9HD+fOVPOOMrP9JBHLuxBd31PGIVZfz59geYMHo4Xz/rFGzL5NHbruJv/3iUuW8uJpvPM3RgXz5/yrGMH6WlzGdffpOzvvVzjA5SqCqU92puaOLV+e9w8jGH6qN8yGa/6RN59rm52j3tfYZ6u55HLpEhFAljmu8vKlEVyDaXy+M4TkFVoe9b05Ym0q6/wwo2emMzdk3/qwcmmcqUBGqgk3ve9hANhzp9L5nKaH939twKurudpadUmn4Hr+4P9zZeu/QD0c9Dx9eu9vFJg+u6lFdX8vDDz3LpNbeUMsC5rsfpcw7nh9/6Eommlt0+ebpSinh5nG99+1KuuPEOpJS0JlKc/ZnjufnKH3PnH37Or354HsMG9eP5ufP5yg8u57izLqAtkcSyeyJKwb0PP60z4xWMgyfMPhgjEnpfkYSiQKhDBvTloduuZuKYEWQz2Z3O0NcVhiFpT6ZpS6RKv5c+NVWISBjLNrFta7uvkG3tsnFOoZCGQUNTi/YiKUjj1ZXlOzYSKkVNr0pNSobE9TwamloL3jOBBL37EIIPOzIcC6BrwJbj9rzPCgHmdrYhKXSHngd5VwepFR+IImGbhq4EVfDbx9/DHhjPdYn3quLS393E3pPHcdwRMwvpIn1+/cOvsfCd5Tz13FzKq8q3m//4I33QDYNEe4Ip+0/jS6cdx5LlazjitK/Tu3c1FWVxRMH/eUtjC5u3NKHyDtHyeCG7WvcCBNGyGI8+/TLvLFvNpLEjcF2PfadO4OD9pvGfV+YTL4/vkm5eSombzTF90hiOn30Qv7/53lI6zvezGRmGQVt7gg2b6hnYTxs8RwwdiBXSvsj/C5WU8hUhy2LD5gY21TUydJD2IBkysN+OjYRSMmLIQL25SMmGTVvYWLelU9m1QIL+yKUcKI8IBlUL+pYL+ld2fvWtEAyoFPQp7+6/2rtcMLBKt+tXodsMrBL0ivVcMbpIvqkcJDMKy4RB1YJJgyR7j9CviQMlA6sEYUuTdyKtyDh7nm6sUJUQOxTiy9+9jDXrN5WynUkpue2aixk6ZACZdHa3cTXrSn7JZIrBA/py/81XMKBvDb++7jbq6xtZta6W1xa+w9w3F7Nk2Rpa25NUlMWp7l2tcwwL0eP9NgxJNp3lB7+6XpN2IU/0Ly/8aqlO4a5Iv0KAAUwcOwLP87RbYKE4wPuVoL1CSS2ltK/4+FHDGDlsILlc/r++T2pbahHLpL25lVfnLy4R617jR2JGwtvMkeH6uuJOsYCuUop5by2htbEFyzI/dP/yQILu6YGSmiiPm2rytSNMHE9L00W/U6XAMvTrtZU+l96fx9aqNfIufPsoiylDJOm8TtdgGVoP9+ACl+uedIiFKaWAlAIcDxxPse9IgyMnGozpLxlQJaiIaLcrzytKy4q2NKxu8FnXqHj+XY8lG30s8+MbVVrMBtZdRbRtQvF9RShk09DUwufO/xnP//MGLFOHSffr3Ys7r7+UI077RsEgJf6rhEEf9LW6rkvfmmru/+sVjBgygLqGJp5+aR64LplkqsQ2PuCkFemORyjLJFLIX9wxGMbzfOIVZTz+1Iv8+rrb+PH5XySXdzhwn734zcXf5Ac/vpJor8rS97YlBWqjoEQIiZfNMWHMcAzD2OV80j1Js8IyefCpl/jml07F831CtsV3z/kM537jEkQ0jCmNbrUji0Eh3g4i88yC+kIashBZWogiBISU3HH/E3zmxNn4vs9e40YxduRQlq1cSzQa6aT/tiyTttZ2Dpk5g7EjhuB6ulbmHfc/2aP+uWOleITeiKSUCFQh2tT7RKlEdhuC9nwI24JnlrjMX+Mxur/kO0dbWIYm6pgtuPdVlycXuyRzYJqlBGSETLj0/jxfOsTkrIMtNjT5/Pl5l3WNPo0JRdjqTM45B8oj8K2jbGZNMBAILBNW1vvcPddlRZ1PKqf77V8p2HekwX6jJIdPFFgGLFztEbIE3sfsQTCkfphVIUy667FdFd4rlnXqajR0PY/yinJefXUBF1x6LX/81ffxfV0d46B9pnDVpd/l/O/9kkhVRUn/6BeL0m6jTnWx3l8xQ5mUsqTn7qrWMkqVVLxO3xU9SpBGgTh8Um1pZh09ixmTx5HPO/StqeY//7yB5195k+b2RKGQq+q2ITU0t/Lu8jXMe2sJifYkZeXxTsTpex7xinJ+8psbiEXDfLuQzP7Cr34OKQQ/+c2NpNuT2LEItmUihNwaCl643lw+j5vNA4rDjz6Ug/aZguf5+GprrT9jG2tS/Mw0DRync64Tz/eJxmO88PIbvDzvbQ7adwq5fJ6vfPZE3l2xlmtuuKOg/zML6gelK457Pvg+IhLWCf1VYWWEJJFKb30O4jFGDx9M7ZMv4lRV4DkOeB7hsjix8jhPPDeXJ//zOkcduh+mCT/6xhf4wld+RM4yS0ZLgGQyjSEll33/K/i+j2kYvPDqAh596kViZXq9DSlLxkdRkLhNw2DSmBEseW0hqqYa13HA9QjFY1tzWQcE/UFLO1oaXtOgSGR9HFfrj4s66fc2+6za6BONi63GRAqS93ST0/YzWbbZ55L78qyt8zFtgWkUNuJCe8fT5HzFmSEmDpQ0JhXxkOKx+R7XP+WQzOhMaaKDJPLAGy57DTW46nO2JvqPoYqjVJnDkBiWRU1VZSn4pJjft7y6krzjkk2mwDSJxaLdHnTXdSnvVcUNN9/L3lPG8+XTjyOXz+PlPL5x1sksXrqSO//5GMlMBgSEQjbpQgixrKnWeTQKemrX9fDbEzR7PhiSWGUZ7YkkqrGFfN7Bdb0CcXtkc3ldPaM8Riyugy/a25OQSJDp27sklRWrPnuNzbQJiEejhGIRnn3pDTZu3sKg/n1QSjF+9DDGjx62U2u3ZPlqfvTrG3jk6ZeIl8dLbmfFlYnFY3znp1exbNU6fvXD86iqKON7536WQ/efztU33c1zc9+kvrEFOqQ1xZDYkTCD+/dlnynjOeOEIznpqEM65TkpBhG1tiWgqZW803lN8o5DvqWNfDKJEY12qk7T8aT0tYuu4IX7bqSmqgLHdfn9z77NUYfux32PPMvyNRtJZ7KEbIuqyjL696lhv2kTeePtpdx8+7+IVZShlI8Rsli0dJXeyH2Fj+L6X36PC22LuqYWelVVMnRgXx56+mWSqTSWaXLuhb/m+X/dyIjBA/j8yUdT19jM5dfeSnNzm14HQzJs8AB+d8m3OHS/aQCs2bCZL1/wi1KlmOIp1g7ZvLdyHW2JJPFoBNf1uOLH38BxHFZv2ExVRRmjhg7kif+8Tn1DM5b1yTAuiujoWR/IZUgBySwcOEZy9qEW592a4/1kXiySaP8KwXVfDBG2iqQquPyhPE+87RILi5IxL52DLx1i8t1jLF5e7nHJP/O0piEW1sSO6nAsErr9z06xmD3JpCGhqIjAW+t8vndXHtOEkNHZCFh8SJJZuOO8ECvrfS79V56yqGBXT6GGhERScfGpNlvaFTc95VAW3/V+3o8ONpPOcMkF53DyMYcyuH8fKsrLemy7qa6R2voG/nL3Q9xy5wNEy2PdjttFHSsKXnrgppLusIh0JsvajZu59ua/8+CTL/KLH3yVkcMGMXr4YAb371Nq57gu7yxdxZoNm3n0uVe44477OfHTR3P2GXPYd9pEelVuTS9ZW9fA2++u4L7HnueO+x4H4IwTjuTME2czZcJoBnXot7m1nXkLl3DrPx7l/kefIxaP0d6e4MB9p3DrVRczdHC/nfY6KR65fV8x+8zzeeGVN3Vwjt85Ek8KQaK1nVGjhvKts8/glGNnMaBgnHMcl8XLVrG+tl5XNrEtaqorGDqoH8MHD+g0XjaX572Vazn5Kxexqb4B3/M567TjOH3O4ewzZTxVHdakoamV91auZfX6TVx/2328vXhZqZpJR110MpFiysQx/Ok3P+yUm2NbaGpp49wfXs6Dj71AtOD/bUhJoj3Jn353EV/93Ek9r5XrMWS/E2lsaSMSCpFKpRkysB83XP4Djp61P6DzVs9b+C7tiSR9+/QqFRAAePTZVzj/p1eyvraeSJeqKIYhSbS28/Mffo2ffef/tjn3iYefybLVG4h0KdgQSNAfsLGwp7Utvl/UIbseXHCsxZcPMfnXGy5XPOzg+RAN6c+6biDpHOw9UjJrvEFLSmEbmrzvnuviK03Ort/d8iGF1q41JRURW3Qi/Y+HlU8hpKChqYXnXlmgJV7P6/YAm6ZWIYRCFu2JJEL2bGAteglk0hk+e/7P+MIpR5cEQxSYlkkkZNPc2o5lW7iex7vL17Do3RWks7nS4lmWiW3pHL4h29Z2BtNkzYZNOuGPszWMPBSyiIRDWKVdX2GZJutq63hv1TpyOaeTXjMWDWsSVppkKyrLefn51/j0V37If+67kUQyzYJFS7FDPdWw09c3cewIhgzoS77gS3zZhedy6KsLuqlDlFJ4SlFeVcHa2jq+ddEVXH79bczcezIH7L0X0yePZcTgAYweNhjLMvE8n0wuR0uhVNeaDZtYsWYjy1atY8ny1azdsLlwHRZZN4tpGqxYu5G3l67stCbhsI1lGpimuU1vB8/ziZfFWbR0JbNO+zrHHXEgxx0xk/Gjh9O7qpJI2CaTy7OpvpG3liznmZfm8dwr80mm0oUoUf2D8JVPJBbhgp9fw5aGZk46+lCqKspIpTOs31TPK28s4r7Hnqe5tR3b0vc8EouwYfMW5nzxe3zq0P04frYueTV10hjCIZtkOsNrC97h9YVLeOSZV3j2lTcxDEk0FukmFGjPmTi/uvZWUqkMZ574KfrUVJFKZ6ita+C1Be9w/+MvsHpdLeHQJ4Ocd1sJOu9CvwrBH7/UWYL+9YN5nljsEjIEhoSLTrA5fobBzc+73PC0g2VqlUhP98aQkMgoLjrR5rgpJq0ZRcSGjU2Kb9yWY3tRraKgIx9QJZBSf+f9GME/Kgm6KOWl2hLaH7GjzqfrDliot0c4XCg7pLYrmefyeZxkuuedNBIiFAqRa2nb6uDeceGK7ZSCkEWsspxUexIKHgyd5ucrPS/bJlYe19JYIlkoRiu3XlOpXx/CIWJxXYg0mUyx917jufuPl1EejzHzpK+wevkaCNndH5jCXMsiYW787Y/43Kd16sxUOsuk2Z9j0+aGTsUAOv8OtNEvm8+TT2f1PEwDOxQiFLJKRVQ9zyefd3AKulN8HwwDI6Q3q+LJTQih16Rr0VitKC/cL4Usi223YGqxaGw6mQJfYUXCRKO6gELecUmlM/jZHBiScCxaODV0Pzn5vk8mkSJSpgsw5PIOyWQK8k6haKvdaVOXhU0+lUyVisZGwyGdq8P1yGSz+Nk8mCbxsmhJ/789pNuThGIR4rEoecclkUzp5yBkl8LMAyPhR2LkApWD8hrBT0+yOHC0we8ecbjzRYdYVJR+xz0fVaEsIhjfX5JzdSPbgDUNPqksnbw86C5EY0jY0KxzMdgfw/hLXUevfKf9aos5eLffxse2LCI1VdvsQ/k+oX41O+V1UJT2ZEXZ9tsV5lVWXqaj9rZzDRTKL40bNZRHbr+KvjXVfP3Hv2P1stVU9e+D6/Sc7EkakrbWdn71h9s4/fgjsUyTcNimIh5jg19fItBuYyqF73lYpkmosryQnkKvpeO4RaekUlKiUMguZQxUSmn9rlJsTT2tKKvY/nWWjLzb2UyL97KsogyBKBgoHbIqjxRCVzaPRlCobd77Yn7nsqoKPM8jmc4ghSAej+mkUz1Go6rCvYqXxnVcj7zrIoUgEg5jRKMlI/HOoNv4sSgyHutx/ICgPyRIAYks9K0SXPU5m8G9BK1pRf9KgWGKYgWk7eq1+1YIquMCtyAtSyGob9M/ih3lnFVsJeaPq/HB+x+I6sWcxNvV4+5C8IpOvr6T1+P7OwypNqTEdRyu+Mn59K2ppqGplQefegm7oox83tkmqflKYYVCOAWjpmWaZLN5Eql0QQre8bp0DVTp7ImhSonw/Q/gOt/PM7DVF1qVNpadUT8Wr0vXIlQ7dw1eZ33y1jVQOww7797Xro//ccXHIqmvEJBzFRMHCa48K8Sw3pJEBnIunLyPyWcOMEmkFNtKUVxUUcTDglCXNMCJ7K7pxvfksNOPnf5OCHKOQ7/+fThw78kopdhU30Bza1un6io9Si6mgZPNMmroQCJhHb69fPV6ajfVE7LfX3SbUqrDa/c4Vf03c3m/3/2g1mB3WceAoAVk8/D5Ay3Kw4KGdkXI0sTbmlacM8tk/7EGicy2SRqKwSudSdb1CPAJhz6y6x9zr6qKkn5V19CTpZdR8Ku2TJNUKoOUkgvP+3yhjqHgxjvuJ5/J7ZbRkgECgv4Id3qwLR1I8s2/5fjzcw5RW5QkWs+HH86xGVQtyeY724s6StGOV9BRi86kvUubRfDMfGyglM4NUV/XwNz5i5BS0L9PDV//4ilkmlpoa2kjmUyTSmdIpTMkkinaW9poa2qhX00V9/zpVxw+cwaGIbn3oWe49Z6HiVWU7fKRPECA9wvz4/FDg7AluOsVhw0Nio0tHuMGuJy6r0lrWpFzoTquvTq+f3cOT3WWlAu5WGhLK7KO1iUXo8grors2l2LfAT4mJI3Cti2+d+kfmDB6OKOHD+aKH3+DmTMmc//jL7BqXS3JVBqEoDweY8SQARy6/zROP/5IYtEwrudx/a338aNfX48dtoMFDRAQ9LZIWgqQpiIaEtz4jMPIvoLJgyXJrHbxmzpM8o3ZFlc+Uggk2VqEGcuAxqSivk0xoo/Q0rSvGFQtkYbYKV2WFJrc827w4Hyc1Bt2OMTajZs55OSv8f2vfY6Tjz2ME486hBOPOmSb36uta+DuB57klr8/zGtvvE20TGe2U4ERIkBA0Nv5wekIUbIO/OZhh+vOsikLa8JtSylO2ttkRb3Pg2+4naL9DKmz0c1f4zF+gEU6ryXvUf0kveLaWGhsIyOiISGZVsyZYXLKPibn357D8bbdPsDuRtI+kUiY5vYE37/kan513d8YM2III4cNYkCfXsRiUVCK9mSKTXWNrFq3kVXramlpbAHLpKyyAt/3A3IOEBD0zpJ0McjkykcdfnW6jeNpY2Iyq/jmbIs1WxSLN/jECyHfvgLLEjz+tsfx00wsQydN6lchOHiswf2vu1TENdF3RSFlNCP7SHqV6TDzPbvOw8eTpC3TJFxdSSab4/WFS3h93tudnd8FWhdmmoRDNmVVFT26ywUIsMcSdCGPTI+RerLwmSG1mqEsAq+85/G3F12+crhFa0pnTLMFXHSCxfm35UhkdfpR19N/rm1Q3PqiywXHWjQnFamc4vMHWry5xmd9g09ZtLuC2fXBz+uc0+n8x9O1R5T+tydDJxkyDYOyeFQnE+rWokPAiO+VnskAAT6K3/1ul80u5+icvG2FFKF+IWpXKZ1c30sqWn2I2ALfh1hUcPvLDqP7SQ4ZZ9CaVqTyOk3ohXNsfnhPnlxWEY4IhK8jBu+b51IRhS8fYpHJK8oj8ItTbX7/uMPb6z2U30E8FhALC+bsbzJtmKQpobZbHGJ3Rc4tpdYOUCqnGiDAzj8xZkE43CMJWgidJmJ0P8nM0ZKhNZKqeEGVYOuyU2fONJk0SFDXpnhmiUfWAVOAZQiuejTP0JoQo/rqUG6lYNZ4g+u/ZPP6Sp8nFrklPXM0BDc/77Jmi88XD7EYWiMYN0By/ZdCLFjj8d4mn0QWIhYMrBbsNcRgaI0g6yreq1X4/sdPqhrcS+ey9lVA0gEC7Co5GwJaM9oT7MP04tqtCNr1FMNqBDNHG7RnFHNX+J2OF2ELJgySjOgLr6zwtboB7VnRmobfPJznS4dY5F3dn68gZsP+oyWvLNeh4YbUfcXD8OwSn3mrc+w70mDaMMnwGsGgasnofjqUN+fqQJhFG3z+Oc9nxWaflfUfr6BSpbS6aP9RBhVRreoJjuwBAuw8/MKJ/Y3VHgvW+JiW+NDqkpq72yI8/Y7HYws1wxYLunZsUzyoR2x95FBK+yZHQrB8s+L7d+c77XBFG1DY1q52RT2SryAe0YT17Dsez77jYluCsAlGoZ3jam8Rr+CvJ6QOFf84+UEXk/rc+6qrrz0g5wAB3pekY5kC2xQfatHo3UoHXZSGQ+b2WKTnrHU6l/C2M831tKhFVUU8omux+T7kPVDu1uyYYZuSMakYufhx1F7GQsFvLECA/0LUKWZ2/VCx23lx/DcE+H6/29HTyuggtSs+OQmS/MAmFiDAxw5msATdpfgAAQIECAg6wId4QOvuW14syNETpNgqdReNits6SUjRuc32pHUhuhQ/YduFErrOeWf63t48u429nf6KBYl3dg12dR06ti2ecIJAxQABQe+h5Oz6kMt21gHZIYElO5N0MXd22t2qt867+r2I3Z1EBJDOg++q0huRcM/lD4rlzJy86tRBJCS6eZb0OGcpiIV63lSKPvQCnfmw2zwLn7tO57GjYdFjX46r5xoL613EKVSlClk9E6kUnddBGIJoaNukm8xCx5BUaYoe1zdAQNAB9gByrooJZk41MKRAoTANmLvcp65Vae+WQnvXh+q4YHQ/wdwVPlLBkBpBr7hg4Vq/E/kJwPFhv5GSITXaut2ehpeXe/h+IaNgF9Ib2UcyZajE80EKRd6FF5Z6mlxFz3OWUtsGNrUqXl/pd6t1Wex7TH/tHrmq3scyO8yz8PmEQZIJAySuB4ahSGX12H5nzsZxYVAvwdBekpeWeRhSBz6VhwXLNnfuu9h/OqeTde09XIv8b63zu61Xx/azJxtUx4sRroLlm30Wre/ed4A9G0Hm8U86QQvIOYqRfQRHTDLY3OLTlobmZM8+0YaE1qTiyIkmB42R5B3F12dbOF7PROO4cNLeJvGQoL5ZMXGQ5JxZFnlXdepbCsjnFAePk4zpJ9jcrOfRmlbbkHb1nI+cZFDfpmhMwBETDU7c2yCT61y0t9j3AaMk+4yQ5HOdgwmkgHxecdRkgwFVgs0tPq0paMuobtJ4Ucof3lty8actJg2S5JKK8QMkB4/rue9MVjFrguQLB5m8tc7nrXU+p+5rMn24JNulva90LcxT9zVJZfV9aE4qMnkVeEAGCCToPZmoV9UrXl7iEYoKXE9HZ5pdVRwCHAXXP53n/2ZZTBtm8MK7HgtXeT1WIBcCUjnFwws9tqz2mL/O5zefCRGydLrXrqTjefD2ep9XlniEYnoettlz8IyUsKRW8dJrLiBI5Q2Om2rwz7k9uHMXVRg+2/T1dlyYv9bnlXc97Iien2321FxvLv9+0+P46QZLN/hkHd1/18Y617jgmCkmf3ne4d01Pljwbq1PNCSweghqEAIaE4oXlnqk81t14x399AMECAh6jyFnQdaBqUMlF5xoE7Ygk4c7XnZJ5rZGV4L+M2rDlgbF2gbF52aaXPO4rpq+rZqzhhR85gCTDSMlew0zeG2lRzav83b7XRTceQ/mTDMZ0VtSFoW1WxT/eN3V7o1d5pxzYNpQyZdOsKmIQJ8Kyb/muVhmz/m7hdhOlKQAVynO2N9kxjBJeVSwZKPHg/O97nplBVELVm3x8RScNtPk3Vofo4cIJd+HaKEifGMConEdUp91NAl31SsXdfzVccEFx1qkc1q3/+B8j3dr/W3quAMEBB3gEwqlFGELFq7z+f2/81gdJGi7i9QmBbRnYPQQrVe+4xWXcw83uelJh3iZ6NHjwvcVTQlFYxoeWuDyzgafsN1DxFXheP/wApeHX3WxChJ0sb6k6jxpDAl1bYqXFnscPk0nwlqwzKOssufNYrs+6wpMIbj3NZeXF7mYEd3HtgjR9aEyJrj7BYcfn2oTtqQuMCy6S/nprFYN1cRhS5MCA3pXCMojgo1NWt+vOkjchtRqjSsfdTpJ0KFA/xyg6ykyWII9B8N7C2aMMdh/lM78N7BK4PqdjXOeD5VR+MrhFo+/5fH3/zgMqpbMnmaSznYPc1doCXDeKp+XFrks2qANY9uUCAyYOEgyvTCPA8dI4uHu6hClNHlm8opVdT5/ecYhHoI5B5gkMz0krCm0D1ls03fQtmDqED32AaMlB4yWhHsi6ILqI2wBPvz9NZdP720Ssbv3LQob1FOLPb56hMVeIyR7DZH8YI7NgCqB66luUr0CesWFnsMoycFjJBMHyiCRVYDup1Or17CffzDHaG1cGdJLMG2YwaNveQTFj7vshgLyeTh0gkEqB/NX+YRs8T+XmoQU5F2wTUGfCkFFRNCnXNCUhIZ2hWFsvYdFD4ZNLYo3V/uEwoJ3a316lws2NKnu91To43x9u8JhB1JgQdVSERX0KhNURQXVccH6JkUqR2c1hxAoH5pSii0pME3Bss2KXoX23eehN5vNrYrmdE/5xPXYVTE9dnVMUBEVrGnwS8m1OvblKdjSBi05aE5BXatiY7NiSztIozPZWpZgeZ2iLa2YOdpkSI3gqcUer6/0iYREN4+PYgrdvhWSypigd5nAB9Y0qG6qngB7uHoyOnqW+qDIJ5mFA8dIzj7U4rxbc93cofb43VBCIqm4+FSbLe2Km55yejS8feA3uXBkz+U6+McpMC3R7YhfJGnH02lZQXt75Ap+0dvygw6Z+vrUDjbxbr7IQCgkejZWenrsiKUHcryCb3Jo237O0LPaQgjI5sFzOyuEwyHRTRovChtK6etCUNpAwva2/aCTOUrRKUJu3w86nVO6cnFRt2MIYnYQyRqgy4kzWIJPPorJxu1YZybqKXqtY9Kpog7ZNCjlku6p7yJh7ohcimqLiN1lHj1ENBYL/drFcbv+ext9F//e0+cRG0So89jb0mUXk26pwtjx0NY16wl+sY3Ymshle5GE8YjoptIJ8qUECAh6DybpnZXUu5Ltjsh3V4ilmB72fzGPHamK/F0opNK1r525xl3p3/eDZzLATmgmgiUIECBAgICgAwQIECBAQNABAgQI8PHH/0wHvd2orj0UxTUJliVAgAAfGUF7PuRykA/c7DrBkKByhbJawXIECBDgQyVoocl5dH/BdV+2Awm6+/LguDBpiOTuuW4gSgcIEGD7nPFBBaoUgyEqooJJg3T12wDdUaxzuLLOp7alkKchEKcDBAjwvyToIkl7vg79DVhn+7AsoRMVfYjSu5RSh1AXoy8QhXumnXKFEEipq+YqpQr6coGvfPwOjsBSCISUKKXwS98FKSS+UoX+NQxD26Fd1yv820AI8HpwyhYdjlwd+5BCIIQuNCAQna5BCIHv6zGllLpdx+sT4Hv+Lq9zyYbSwfdadNhgu7bp6iddWMZOCZy69ilFzwEqhtwaDi7E1n93LJTQsbRW1/l1nEPH+RbnVBy/uNp+T/12+Pd/U45LCtE9ERbgd72/hTbF92XhfneNcpWF++0rfe8NIfQz9z7G81G7PU19oARdusmSQMm6g0X6sKuF+75PNpPVv3rT3Epknk8kFkEIget55DNZPTHTBNcF18OIRYiEwyUyzuby+Pk8GAbhcBgpBZ7vk8tksWwby9KaMyklyUQSPJ9YRRmmadDWrisFxMrjnUhYKUUu72BIiWFIZCFuXAhBNpfDc1ykaeK7budrcF1CkQhSCjKZrE44bZgIWbw+j3A0giHlLj2SjgeOqwqbln7P8wvRjIUoy7yrQ8eF1OWqOiKd0zRnGEKHi6PD1ot5P6QofLdDaawisaSzCsMUxMM6PD2XU4RDAqNw2vL8rbmpw+bWvCNFQheF5yvraHIPWVu/o5R+r+MzGLa3Clc5V0/CMAoRnp7CsgX2+8i05ytF1tWVHoSUHTY4RcQ0CpsuZBwdV28aBnZhQ087LqaUpX9LIch7PnnHwTRNYpZJzvPI5l1ClokpBZ5SZD0ffL/beGHTwBCFNoU5dRxvd8UHbiRUgAqipHa8SB8SpBDk8nlOPuYwjjvyQKLhEK3tSRzHJWRbSCm58FfX09qW4JwzT+DQA6ZhGgZNLW3E41E21NZz+32P897Ktdghm+qKMr537mcZOqgfbYkUDzz+Ak8+/RJnnj6H2Qfvw+L3VnH93+5DCEEymeL4ow7lnDOPJ5PN0dTUSlVVBS/Pe5s/3/VvwiEbX2lpyDQMnrjjt/SqquD0837Cuto6opEw6bYkJ59wJCcedTDNzW1UVZYTi4RpbkvguC5V5WX8+Io/MXJIf8789NGUx6O0JVLk8w6WZRKPRvjR5TdQW9eAbVudNoWehAvHh95lghOnG/Sp0AmWNNnqDHTPvevx8hKXMYMlR+9lUlMmWN/kc9tLOqe1Kkh63znGojoGLSmdXnVLu85FPbRGkHM1eVoGzF3u8foqH9vUBCmAz8y0mDBQsqVNURWHpqTi7695JLNa4jtkvOTQcQZ5Vxc/eHqxPp3Ew3pjSeVg2jDJUZMNNrUo7p7rctBYnT1QSkhk9FhhW9tE/vofB8eF46YaTBqsy4a1Z3TIfzKjeHyRx6Zm1WP5rm2dPvKuz+FD+nLs8IHYhqQtl8fxFbaUWFLwu/lLaUhl2a9/DZ8ZN5SQYVCbTHPbu2voHwvz5QkjWdGW4ObFq8h5HjnXo1ckxNf2ncjwihgbEmlMqSXBG95ewab2FIcM6cfxIwYSMQ1ac3nyvsKWgohpctX8pWxKpDl+1CAOH9wXQwg2JTP8Y/l61rYlsQy5W8qUgR/0Jxy+UoRCNg8+9jxDB/XjlGMP45FnX+Z3N93FZdfeSu9elfStqcLzPe556GkO3ncqpxx7GH+99xFuuuWfzDnyIF596C8cst9U3LzD5vomXntrCaccexjRcJinnn2FaHkZ/3j4Gfr0qualeW+TdxxSyRTf/PLpPHTLb1mzYTPfuOi3XHT5Dfz5rn9z6nGHYRgGvlIYhkE2leGQ/aYyY69xTJ88llOPOxw3ncE0TNxcjgNmTGbB4mVc/svriUbCfPqYWby+cAmXX3YtSimmTx7LC48+T1kswinHHsbcNxdxxY13ctnVN2OaBsMG98fJ53dotFboXB+bWxWLN/qctp9JxBb8/XWXv7/msnijx9j+Ak/AijrFplbFkZMMPnegydj+UhNvHmYMk5w0w+C4aSa1LYrVWxQ5F15d4XH0Xiaj+kruedHB9eD6L4aYPckgk9MS64VzLM470uKBN13++oLDLS+4HDzW4OrP2URsLS2/vtJnYJXk+Okmq7eoUlKpS0+xOXovE9dVLK316V8lWLTBx/XhleUeA6okc6aZvLLc4/43Xe6Z61JTpmstuj785z2PaUMNDh5r8vjbLg/Mc5k5xuC6s0LUlAscd+dcZ3WSKYPn19cRt0zOnTySuZsa+cvilfxh4TJilkmfaBgl4M36Jp5dX8/ZE0cwtqqctQ0tREyTuG1yx5LV5D0Pz1fUREL8+4RDOHHkQK58cym/e3Mpv3n9HeKWxbTeVbhK8dKGLRhC8NW9RrGgvqU0nikEA2IRPBRPrNnM0LIYXxg/nMfXbmZNewrbNHbbA39A0HuCRkUIspksjc2teJ7HW0tWsPqNRWxpbOYnv/0T9Q3N2JZFIpmisbmVdDbL2o2befHZV/jsNy+hPB7j8ou+rtUGvk9Lazue59HY0ko+l0dI3X9DUwuJZBov79K3bw1X/PgbbNy8hQsuu5bWZBrH93nx9be47JpbsC2zgx4ZTjrqEL560W/JZHOcdeoxhGJR8o6DFYvyyDMv88Dj/2HzlkY21TfieR7rautYX1vP9bfdx4o1G3CEYEtjC57n8c6y1ax9/S22NLdy2TW3sGzVekLh0Hal564E056BRBbq2xT1Gz0aEoq5y7W0GgkLXFeRzin+Pd8lm4c50wxcX+ecPniswdPveGQdaEurko43mYX2jE5LWteieHiBSzoPB44x8POKSYMlJ84weWShy8IVHrYFtQ1aOp8xXDJ7kkHO0RLwQwtcLAP2Hi5xM4oJgyQzhhscMl4iBAysErRndJGGsA2ZwlzaM4pVW3w21vo0pxS3veSUquqkc7pNW1qnVV21zufJRR7DagRj+umUtTtr+hdA3vVozuVpyzm819zG+vommrM5rl24jE3JDKaUWIbBv5et5fJ5Szh+xEC+MmM8p4wezI9efov6dBZTSnKOy1kTRrBPv2ounruIxZsbUSja8g7XLHyP91raCVkmjufRlM3TnnNY3ppgQ10Tzdk817+1nDXtScKGScZ1acnlacnlac3lO+mmA4IO8NHBkJiGgWEYnHz0LE488wTuuPZnbNi0hdZEEsMwkFK3MQ0D2zKx+vRiU30Djc2tTB43kr69e4HjYJkmRqFdSaSSEtM0sEwDlcsxYfRwopEQi99bhXI9YpEwQggi4RAvvv4Wnu8jpSSdzjJh/Cgs0+S+m+/l8edfZcLo4ewzbSKpZIpwNMILry5gS1MLoixWugbTMBBVFbzx9lKWr14PkTCmqT879vADOPGM47jruktJpjNs3tKIZVm7pEMtetcMrRHsP9Hk60daTB8mWVPna52ygnhYsHiDzxurfT412aA6BnsNkWRdWLzepyzcWeKUUmcVBCCvGFQtqIjClnYFhYrnhtSbgihk5hOWoDWlSOcLVcvRhQTmr/VpaFccNsHAKGwKW9oVEwdKhveVjBsoWdvg4+V1cQNZMDaaUm8IB081+O4xFrUtiqyjPy8aJA1DV1y3YjB9mKQto1jfpHTF8V20tJqFBThiSH9mjxnKVYdOpzmbpzmbxyzYQcIhm2sWLmPupkauPGQa/1i2nvWtCcpDNq7ykYZkep8qGtI5NiTSGCELX0HUtljfnmZNW4pQQRFvFXLHzhrUh9ljhnD1odNJuy4N6Zz+TIBRMC4aXY4Du6NbcEDQe6Dee8igfowbPYz+fWoIbUMvq5RC+QrP88nlHUzTwDS7u50UPS86emCgFJFwCN9XZHN5UArVoeiTaRoopTAMiZdKc8LsgzEMyRGH7U/dliYAPnvip1COiwCikRCmYaC6uDso3ycStrGtzsrRgf36MHb0cAb370M4ZJeuRwihN6Kd/CX6vk6lOrCXoH+lIGxr0dDv4BXhuPDgApdeccGn9jI5dJzBs0u8kqGuJx13n3LBuXNs/m+WxXNLPP71hgtWwXhHd6+J4r8tQ/dhm1DbrJi/xmdkH8lR003KI3DNEw7lEcGxUwzG9ZfMX+MjO9RvLHpm9K0QDKmRVEVFp0K1RY+NiA3/N8viL+eGGdtf8sN782xoUiVDYZHsd+XR6x+LMLKyjL7RcCfDnAJChkFTIs38Lc3YhuTo4f0RUnsEoXTNy7Bp4CmF62/1yFFKYQjtqdOlpCT9omFGVJTRLxbBLlSk2FEmxLznlzxXDCF2izCFIN3oHoKSCxpw4+33s+zNRTz9ypt4vk9leRmpdKbkEqclSKNEaOXxGE0t7bS0JsDUUpxOX+qjfB/TMlGuh1/88ZgmG+u2IKVgYL/eKCFL47uux5ABfWloasVxXSIV5Ry491689e4KZh41iy1NraQzWU6dcziXXPUXkik9L6UURsmNTl+PlNrlquRCWJjX7fc9xosPP8uTry2grT1Jr6oK0tkcjuPiZrLIkE1kOyqPojeaZcLyOsW/XnZ4caVHWVhQGddSWNFDIBaGZxf5vLXO59zDTF5d6fP2So9Jg7SUJzukPCh6bySzitdW+zy31GNdo1YvYAnq2zUhRe3SoQeB9sKwTV39RvlbXQtfXu4xc4zkG0da/O1FhxeWuCypNTl5H5OFa32WbPRLBQak0NKYBzy8wKOuwefNoRIpdGGGTB7MwvxyDvztRZevHWEyuq+JW9BxR0P6z1QOlK+IhMR2pc7iRmgIwT+Xr2Nx7RZe2txIzvOpDFmkHU8bENNZvjhlNCnH5fcLlvGDvcfzwoYtPLlmE1WREKm8w6ZUhjLbpKxgqTSlwPEUcdvEMiQt2Xyn8e5fuZF5a2t5qa6RZN6hMmyT8/xObnhFKVoIiJgG1eEIG5JpXE/huR62ZWDJj9Z4GEjQe4gO2k+myDvOVl/XcIgFz7zC+NHDOe+sk8m0J8gmMyVXuua2dpzN9Rw2cwZl8Si33/cYbS1thKIRVq/biAAO2mcvZMimcc1Ghg0dSL8+vdiwsY5IRRlL3l3JY8/NZd+pE5i5z160rd9Ee3Mb6fYEl3znbCrK46SbWjhgn71YV1vHT7/3S37x+5u59KIruO2fj9G7upIjDtqbbEsrRkEC8toTZHPa2NeeSOGns4iCj7SfSuvPihcdCfP2S29SVVHGRd84i0xjC5PGjuC26y/lgBmTyGWyJVLvSs6+r0moVGnFFDS0K1Zv8vnCwRbRkEDltSeG64HbrnhykUevuODpxS4qq0nOkLrajHILOuicfq8tA4uWeqxt1FKpKbXaYuFaj9UNioPHatVRc0LhZxUzRxs4Hjy/1MM0dDFe2xK8ucanOaX7fnWlj+/C04s9asoE72z0yRR0ywJwczqQrLRhmIJlK3zG9JPMnmSSzWpVR9EvuympuOYJh7o2n1+cZjOwWtCe0l4iJ8ww+NbRtq6Co7atg/Ydt0SKmjkNlmzcQr9omC9OGEHGdWnLZJnWvxd7963mt2+8y2/eWMJrdU385qApVIZt2nJ5TCm55721mELyufHD8PMurdk8qfYUhwzqw1FD+5N2XHzPI9uBhDFN3t3USJltce7kUaTzDr7j4fha7dOac8jn8iTaU0zpXckZY4eSS2c5cEAN1x+5L4PKYji+/5FK0h9YTcIAuy85O47DoQfvy+dPOYaa6gpi0Qj77zuVIz91MGefcTxLVqzhlZfnc8apx3LysbOIRyPEoxGOOnoW537h0/z9oWe45Lc3YdoWlmVRX9dAayLJqccdzqlzjmCfqRM45wuf5sbb7+fNt5YQiYZRSvH4868xctggvvmlU6nsXc3YkUM494unMKhfH/7294eJRyNc84vvAYp5765AAJV9e3PkIfsydcJohg8ewLNzF9DangAhOHr2wZx+wpEM7FdDNp+ntqGZLY3NeJ7P3ntP5kunz2FQ/95EI2GmT5/EkbMP5uwzj6eppZ0n/v0kx51wJBd/52xWrq3lxZfmEY5FOgXgCMBVUBETzJlmaJ2vEvSuEuwzwuDwySYj+0geWeDSp0pw/HSTfhWC5Y0+65sVNWWCu152GTpAcuxUk34VkqyjWNWgyObhmCkm04dpN7Ys0JBQOO5WaTmVh0XrPQ4cYzBlqCRsCI6aYTBztMFVjznMW+kTCWkCNQ1oaVfMGG5Q26z49xsuobCgKak4fILB7S+7NCT0KcD1YNpIyRETDWIhgWUIJg2WTB9tcOw0g2WbfJbV+syaaHLwOIllCFJZxZIN+rqOnWIwfqBBbYuirtnn/KMsZk8yeWC+p0uBGd3J2fUV0/r14vSxQ6kO2xhCslffamYO6cfnJwxjfSLNaxvrmT1iEJcfPJXnN9Qzr76ZqpDN+F4VzBzQmxGVcZa3tNOed1jblmJFa4LPjR/O5L7VVIZs9h/Sj9PHDuHZ9fWsam5nev8azhg7lN7RMFIIJvau4sAhffn8hOE0pHO8uH4zhw0byEmjBhG3LEwpmdqvF/sP6sNZE4bzZn0TCzZu4bOTR3HRAXvxxJpaljW1ETbNj0yK/sADVQLsZgSNjtobM2ootmmQd1wqyuJabQDkcnlWr68lkUgxadwoXM9D+T7VVRUArFizng3rNxOJR5GF6EEhBKlkimFDBzJj0liskM28hUtYvWYD8bI4nucjpcB1XXK5PFMmjmHimBF4nsfmLY0sem8VmUyWeDzGyCEDEEKwflM9zU2tlFeUMWrYQJLpLGHbYvOWJhqbWpCGwcQxI3SR2myOsniMhqYWNtTWAzB86EDisQjZXJ7yeBTL1Nq7XN5h3cY6mltasUM2UyaMZsmy1aS3IUEXS1cNqJIks4qQBWFLq1WEgJaUYnOrojou6BXXkZaNSUVzUhENaU+IvoXCvMmcoiws2NKuvSdG9NGEbQgIWYK1jX4n1zUptLeFZcCkQZKqmCCTV7xbqyXljrUYhdBxRAOqdU3L+laFaWrpf2Rfyfom3bcUuoLNkF4CQxZrOm4NvnE9pQ2FeW0QLUrQtgnrmxR5V19PeUSQdRQbGhS9K3UQzZotqlstydIzpxRDy2NETZO061JuW5hSFFRjinXtKRI5h1HVZZhC4vg+q9qSVNgWA+IREnmHypBNUzbPpkQa05Ak8w7V4RAz+lYTs0ySjsvK1gR1qQwCGFQWo8w2STkuZbaFJQvXg2J9e5q2bJ6RVWUYUpBzPcpDdsl33fF81ranSOVdYrbJyIo4S5rbPvJK6wFB7yFSdCabxfd1OLTveR1+6ZJQyMYwDdLpTMnYpzwd/GCFbB1Q4ncJ4ZaSbC6PU4g8NKNhIqFQKWy8OK4QglQ6g8rl9ZNumIQjIQzDwPM8bUQEQraFaZql96SU+L6PbVlYBZe8dCZb0qf7nodpmoQKRsBsLlfYGLpen8AO2ZimifJ9Mpks4XCoR3LuSNJ5t+dQbLMQSeh6+rgPmlBNQwd/FEmw+Pdi9KEhKXlLFMOvQ2Z3zwFZMNRl8lrPi9DGSVN2DwkvFrct6suLl5xz9Rw7dl0sgts1dFsI3VaKQhRhUT2htNqlOIZXUI+ELG0Y9Xz9udqOYJD1fHylkIUIvo6x6iFDR/ZlXa8U3BM2tCEwX1BTeMrHkhK7oAc2hMDxfbLFYwcC09SfgzbyeT2Nh/bLNoQg63kFnbzo9KwiBGFD6lBypch6HhHT/MgNhQFB70EkvS2Djn6W9YOtn8jOOTG2aUwr5u5QdMvB0dlAqYla54BQhT63fgaajBSd39s6fgejk+g+7529vuLG4it/hy532zN+FcOyS3PpkNuilOOiyzx76nN7c5Bdr3MH8+zYlxQ9k/n2rmd78+vioFPKab6jOo2CLt49nfpWJWIWdM67IbvkZFE99NkxjFu9j/G226Zot9kNfKQDL449BB2JbtuSY5EJ1E736e1EBVh/O9VU/R5+5f42fvn+dphqZ64P6Cw1sWPS2ubnPSyT2s5nO9NnVyn+/c7Tf59jK7Vz7+9MBXc6EOiOxlRdetseMW6vz/c73vvp58NC4MURIECAALspAoIOECBAgICgAwQIECBAQNABAgQIEBB0gAABAgQICDpAgAAB9jD8Pw4n/oyl/31xAAAAAElFTkSuQmCC" style="animation:none;height:72px">'
-  +'<div class="eyebrow"><span>Session Complete</span></div>'
+  +'<div class="eyebrow"><span>Lesson Complete</span></div>'
   +'<h2 style="font-size:44px">'+escapeHTML(cur.bravo)+'</h2>'
   +'<div class="score-ring" id="ring"><b id="finalpts">0</b><span>of '+cur.max+'</span></div>'
   +'<p class="quote">'+escapeHTML(cur.quote)+'</p><p class="quote-by">— '+escapeHTML(cur.by)+'</p>'
   +'<div style="max-width:620px;margin:0 auto">'
   +'<div class="objective"><b>📣</b><span><b style="color:var(--gold)">Take-home challenge:</b> '+cur.challenge+GH(cur.challenge_fr)+'</span></div>'
-  +'<div class="objective"><b>⏭</b><span><b style="color:var(--gold)">'+(n<11?'Next session':'You did it')+':</b> '+cur.next+GH(cur.next_fr)+'</span></div></div>'
-  +'<div class="navrow" style="margin-top:20px"><button class="btn gold" data-session="'+n+'">Replay Session ↺</button><button class="btn" data-menu="1">All Sessions ☰</button></div>'
+  +'<div class="objective"><b>⏭</b><span><b style="color:var(--gold)">'+(n<11?'Next lesson':'You did it')+':</b> '+cur.next+GH(cur.next_fr)+'</span></div></div>'
+  +'<div class="navrow" style="margin-top:20px"><button class="btn gold" data-session="'+n+'">Replay Lesson ↺</button><button class="btn" data-menu="1">All Lessons ☰</button></div>'
   +'<div class="footerline">KingCretot Experience · Jonathan King-Cretot · kce@kingcretot.com · 914.809.0112 · www.kingcretot.com</div>'
   +'</div></section>';
 
@@ -1952,7 +1952,7 @@ function handleMatch(t){
 function checkTI(i){
   if(tiDone[i])return;
   var inp=document.getElementById('ti-'+i);
-  var val=inp.value.trim().toLowerCase().replace(/[.!?]$/,'');
+  var val=inp.value.trim().toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g,' ').replace(/[.!?]$/,'');
   var fb=document.getElementById('tifb-'+i);
   if(cur.ti[i].a.indexOf(val)>-1){
     tiDone[i]=true;inp.classList.add('good');inp.disabled=true;sGood();
